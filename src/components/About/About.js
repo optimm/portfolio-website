@@ -1,5 +1,5 @@
 import React from "react";
-import { stackList } from "../../data/ProjectData";
+import { stackList, toolist } from "../../data/ProjectData";
 import {
   Image,
   Technologies,
@@ -47,6 +47,18 @@ function About() {
             <br />
             <Technologies>
               {stackList.map((stack, index) => (
+                <Tech key={index} className="tech">
+                  <TechImg src={stack.img} alt={stack.name} />
+                  <TechName>{stack.name}</TechName>
+                </Tech>
+              ))}
+            </Technologies>
+            <br />
+
+            <div className="AboutBio tagline2">Tools That I Use</div>
+            <br />
+            <Technologies>
+              {toolist.map((stack, index) => (
                 <Tech key={index} className="tech">
                   <TechImg src={stack.img} alt={stack.name} />
                   <TechName>{stack.name}</TechName>

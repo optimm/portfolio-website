@@ -81,16 +81,13 @@ export const stackList = [
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/skill/mysql.png",
-    name: "SQl",
+    name: "SQL",
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/skill/python.png",
     name: "Python",
   },
-  {
-    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/skill/python.png",
-    name: "Python",
-  },
+
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/skill/smartphone.png",
     name: "React Native",
@@ -99,5 +96,23 @@ export const stackList = [
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/skill/nodejs.png",
     name: "Node Js",
   },
+];
 
+export const toolist = [
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/skill/android.png",
+    name: "Android Studio",
+  },
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/skill/ubuntu.png",
+    name: "Ubuntu",
+  },
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/skill/figma.png",
+    name: "Figma",
+  },
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/skill/vs.png",
+    name: "Vs code",
+  },
 ];
