@@ -2,37 +2,57 @@
 export const ProjectList = [
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_1.png",
-    title: "Spense",
-    description: "Codewell challenge, Spense is a landing page for writers.",
-    tech_stack: "Html, Css, Javascript",
-    github_url: "https://your_project_github_link",
-    demo_url: "https://your_project_demo_link",
+    title: "Shoppy",
+    description:
+      "Shoppy is fullstack shopping website cum clothing store management system with advanced features",
+    tech_stack: "React js, Node js, Express js, Mysql",
+    github_url: "https://github.com/optimm/shoppy",
+    demo_url: "https://shooppy1.herokuapp.com/",
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_2.png",
-    title: "Fiber",
+    title: "Kaboom",
     description:
-      "An online portfolio generator. Great to practice flex/grid layouts, absolute positioning and sliders.",
-    tech_stack: "Html, Css, Javascript",
-    github_url: "https://your_project_github_link",
-    demo_url: "https://your_project_demo_link",
-  },
-  {
-    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/portfolio.png",
-    title: "Portfolio",
-    description: "Ofcourse i made my own personal portfolio website.",
-    tech_stack: "Reactjs, Css",
-    github_url: "https://your_project_github_link",
-    demo_url: "https://your_project_demo_link/",
+      "Kaboom is an online video and text chat application built with web sockets",
+    tech_stack: "Node js , Express js, Socket.io, Peer js, Ejs (view engine)",
+    github_url: "https://github.com/optimm/Kaboom",
+    demo_url: "https://kaboom11.herokuapp.com",
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_3.png",
-    title: "Ecommerce website",
+    title: "AlgoX",
     description:
-      "Created simple ecommerce website using reactjs and react-use-cart plugin.",
+      "Algox is a sorting visualization platform with clear and custom visualizations",
     tech_stack: "Reactjs, Css",
-    github_url: "https://your_project_github_link",
-    demo_url: "https://your_project_demo_link",
+    github_url: "https://github.com/optimm/AlgoX",
+    demo_url: "https://optimm.github.io/AlgoX/",
+  },
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/modex.png",
+    title: "Modex",
+    description:
+      "Modex is a chrome extension with dark and light mode toggle features",
+    tech_stack: "HTML, JavaScript, Css",
+    github_url: "https://github.com/optimm/Modex",
+    demo_url: "https://github.com/optimm/Genx-browserrr",
+  },
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/genx.png",
+    title: "Genx",
+    description:
+      "Genx is a simple python based web browser built using PyQt5 library ",
+    tech_stack: "HTML, JavaScript, Css",
+    github_url: "https://github.com/optimm/Genx-browser",
+    demo_url: "https://github.com/optimm/Genx-browser",
+  },
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_4.png",
+    title: "Multi utility",
+    description:
+      "A multi utility website with calculator,weather, calendar and to do list features",
+    tech_stack: "HTML, JavaScript, Css",
+    github_url: "https://github.com/optimm/hack-web-final",
+    demo_url: "https://optimm.github.io/hack-web-final/",
   },
 ];
 
