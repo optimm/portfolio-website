@@ -74,7 +74,7 @@ function Hero() {
             links: {
               color: "#fff",
               distance: 250,
-              enable: false,
+              enable: true,
               opacity: 0.2,
               width: 1,
             },
