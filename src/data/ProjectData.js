@@ -14,7 +14,7 @@ export const ProjectList = [
     title: "Kaboom",
     description:
       "Kaboom is an online video and text chat application built with web sockets",
-    tech_stack: "Node js , Express js, Socket.io, Peer js, Ejs (view engine)",
+    tech_stack: "Node js , Express js, Socket.io, Peer js, Ejs",
     github_url: "https://github.com/optimm/Kaboom",
     demo_url: "https://kaboom11.herokuapp.com",
   },
@@ -26,6 +26,15 @@ export const ProjectList = [
     tech_stack: "Reactjs, Css",
     github_url: "https://github.com/optimm/AlgoX",
     demo_url: "https://optimm.github.io/AlgoX/",
+  },
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_4.png",
+    title: "Multi utility",
+    description:
+      "A multi utility website with calculator,weather, calendar and to do list features",
+    tech_stack: "HTML, JavaScript, Css",
+    github_url: "https://github.com/optimm/hack-web-final",
+    demo_url: "https://optimm.github.io/hack-web-final/",
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/modex.png",
@@ -44,15 +53,6 @@ export const ProjectList = [
     tech_stack: "HTML, JavaScript, Css",
     github_url: "https://github.com/optimm/Genx-browser",
     demo_url: "https://github.com/optimm/Genx-browser",
-  },
-  {
-    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_4.png",
-    title: "Multi utility",
-    description:
-      "A multi utility website with calculator,weather, calendar and to do list features",
-    tech_stack: "HTML, JavaScript, Css",
-    github_url: "https://github.com/optimm/hack-web-final",
-    demo_url: "https://optimm.github.io/hack-web-final/",
   },
 ];
 

@@ -50,7 +50,7 @@ function Hero() {
               bubble: {
                 distance: 400,
                 duration: 2,
-                opacity: 0.8,
+                opacity: 0.1,
                 size: 40,
               },
               push: {
@@ -94,17 +94,17 @@ function Hero() {
                 enable: true,
                 value_area: 800,
               },
-              value: 30,
+              value: 50,
             },
             opacity: {
-              value: 0.3,
+              value: 0.1,
             },
             shape: {
               type: "circle",
             },
             size: {
               random: true,
-              value: 4,
+              value: 2,
             },
           },
           detectRetina: true,
