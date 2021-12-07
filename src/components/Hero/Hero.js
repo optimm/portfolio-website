@@ -118,7 +118,8 @@ function Hero() {
             <h1>Hi, I'm Ayush Saxena</h1>
             {/* <h5>Frontend Developer</h5> */}
             <p className="description">
-              I design and code websites and also do competitive coding.
+              I design and code web, desktop and mobile applications and also do
+              competitive coding.
             </p>
           </HeroLeft>
           <HeroRight>

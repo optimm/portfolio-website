@@ -211,3 +211,6 @@ video {
     font-size: 13px;
   }
 }
+.strong {
+  color: rgb(129, 129, 129);
+}
