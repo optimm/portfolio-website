@@ -8,7 +8,13 @@ import {
   TechName,
   ContactWrapper,
 } from "./AboutElements";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function About() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <svg
@@ -29,7 +35,7 @@ function About() {
         ></path>
       </svg>
       <ContactWrapper id="about">
-        <div className="Container">
+        <div className="Container" data-aos="fade-up">
           <div className="SectionTitle">About Me</div>
           <div className="BigCard">
             <div className="AboutBio">
@@ -45,7 +51,7 @@ function About() {
 
             <div className="AboutBio tagline2">My Technical Skills</div>
             <br />
-            <Technologies>
+            <Technologies data-aos="fade-up">
               {stackList.map((stack, index) => (
                 <Tech key={index} className="tech">
                   <TechImg src={stack.img} alt={stack.name} />
@@ -57,7 +63,7 @@ function About() {
 
             <div className="AboutBio tagline2">Tools That I Use</div>
             <br />
-            <Technologies>
+            <Technologies data-aos="fade-up">
               {toolist.map((stack, index) => (
                 <Tech key={index} className="tech">
                   <TechImg src={stack.img} alt={stack.name} />

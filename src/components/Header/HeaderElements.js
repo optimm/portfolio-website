@@ -27,7 +27,17 @@ export const Logo = styled(LinkRouter)`
   img {
     width: 38px;
     height: 38px;
+      animation: x 1s ease-in-out;
   }
+   @keyframes x {
+    0%{
+      margin-top: -1000px;
+    }
+    100% {
+      margin-top: 0px;
+    }
+  }
+}
 `;
 
 export const Bars = styled(FaBars)`

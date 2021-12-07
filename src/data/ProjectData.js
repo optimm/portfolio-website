@@ -8,6 +8,16 @@ export const ProjectList = [
     tech_stack: "React js, Node js, Express js, Mysql",
     github_url: "https://github.com/optimm/shoppy",
     demo_url: "https://shooppy1.herokuapp.com/",
+    demo: true,
+  },
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/cescape.png",
+    title: "Chatscape",
+    description:
+      "ChatScape is a application to video and text chat with stangers",
+    tech_stack: "Node js , Express js, Socket.io, Peer js, Ejs",
+    github_url: "https://github.com/optimm/ChatScape",
+    demo: false,
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_2.png",
@@ -17,6 +27,7 @@ export const ProjectList = [
     tech_stack: "Node js , Express js, Socket.io, Peer js, Ejs",
     github_url: "https://github.com/optimm/Kaboom",
     demo_url: "https://kaboom11.herokuapp.com",
+    demo: true,
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_3.png",
@@ -26,6 +37,7 @@ export const ProjectList = [
     tech_stack: "Reactjs, Css",
     github_url: "https://github.com/optimm/AlgoX",
     demo_url: "https://optimm.github.io/AlgoX/",
+    demo: true,
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_4.png",
@@ -35,6 +47,7 @@ export const ProjectList = [
     tech_stack: "HTML, JavaScript, Css",
     github_url: "https://github.com/optimm/hack-web-final",
     demo_url: "https://optimm.github.io/hack-web-final/",
+    demo: true,
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/modex.png",
@@ -44,6 +57,7 @@ export const ProjectList = [
     tech_stack: "HTML, JavaScript, Css",
     github_url: "https://github.com/optimm/Modex",
     demo_url: "https://github.com/optimm/Genx-browserrr",
+    demo: false,
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/genx.png",
@@ -53,6 +67,7 @@ export const ProjectList = [
     tech_stack: "HTML, JavaScript, Css",
     github_url: "https://github.com/optimm/Genx-browser",
     demo_url: "https://github.com/optimm/Genx-browser",
+    demo: false,
   },
 ];
 

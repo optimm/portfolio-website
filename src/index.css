@@ -180,3 +180,20 @@ video {
 #projects {
   margin-top: 100px;
 }
+@media (max-width: 992px) {
+  .main-image {
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: MoveLeftRight 5s linear infinite;
+  }
+  @keyframes MoveLeftRight {
+    0%,
+    100% {
+      margin-left: 15vw;
+    }
+    50% {
+      margin-left: 25vw;
+    }
+  }
+}

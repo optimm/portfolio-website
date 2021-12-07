@@ -41,7 +41,15 @@ export const HeroLeft = styled.div`
   align-items: flex-start;
   text-align: left;
   flex: 1;
-
+  animation: z 1s ease-in-out;
+  @keyframes z {
+    0% {
+      margin-top: -1000px;
+    }
+    100% {
+      margin-top: 0px;
+    }
+  }
   h1 {
     font-size: 2.6rem;
     color: #f6f6f6;
@@ -67,6 +75,33 @@ export const HeroLeft = styled.div`
     text-align: center;
     align-items: center;
     margin-bottom: 2rem;
+    p {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    h1 {
+      font-size: 2.3rem;
+    }
+    p {
+      font-size: 17px;
+    }
+  }
+  @media screen and (max-width: 510px) {
+    h1 {
+      font-size: 2.1rem;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 13px;
+    }
   }
 `;
 
@@ -80,6 +115,10 @@ export const Image = styled.img`
   height: 290px;
   width: auto;
   margin-top: 50px;
+  @media (max-width: 992px) {
+    height: 240px;
+    margin-bottom: 50px;
+  }
 `;
 
 const ScrollAnimation = keyframes`

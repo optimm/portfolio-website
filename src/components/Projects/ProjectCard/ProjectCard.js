@@ -7,15 +7,21 @@ import {
   Stack,
   BtnGroup,
 } from "./ProjectCardElements";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function ProjectCard() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       {ProjectList.map((list, index) => (
-        <Card key={index} className="wow bounceInUp">
-          <CardLeft>
+        <Card key={index}>
+          <CardLeft data-aos="fade-up-right">
             <img src={list.img} alt={list.name} />
           </CardLeft>
-          <CardRight>
+          <CardRight data-aos="fade-up-left">
             <h4>{list.title}</h4>
             <p>{list.description}</p>
             <Stack>
@@ -31,7 +37,7 @@ function ProjectCard() {
               >
                 Github
               </a>
-              {index < 4 && (
+              {list.demo && (
                 <a
                   className="btn PrimaryBtn"
                   href={list.demo_url}

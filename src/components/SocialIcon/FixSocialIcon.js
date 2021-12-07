@@ -8,7 +8,15 @@ const Social = styled.div`
   top: 48%;
   left: 1.5rem;
   transform: translateY(-50%);
-
+  animation: y 1s ease-in-out;
+  @keyframes y {
+    0% {
+      margin-top: -1000px;
+    }
+    100% {
+      margin-top: 0px;
+    }
+  }
   ul {
     display: block;
   }
@@ -22,11 +30,11 @@ const Social = styled.div`
     color: rgb(119, 119, 121);
     transition: 0.2s ease-in;
     &:hover {
-      color: rgb(57, 134, 250);
+      color: #24a0ed;
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 880px) {
     display: none;
   }
 `;

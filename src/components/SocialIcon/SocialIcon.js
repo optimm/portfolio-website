@@ -26,7 +26,7 @@ export const SocialDiv = styled.div`
     margin-left: 2rem;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 880px) {
     display: block;
   }
 `;
