@@ -22,7 +22,7 @@ const Header = ({ toggle }) => {
         <NavBtn>
           <a
             className="btn PrimaryBtn"
-            href="https://github.com/optimm/"
+            href="https://drive.google.com/file/d/1OqJ0-GGpmLD86znD_4aqzBuqGIwwxHCI/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -16,7 +16,7 @@ export const Technologies = styled.div`
 
   margin-right: auto;
   margin-left: auto;
-
+  justify-content: center;
   allign-items: center;
   margin-bottom: -2rem;
   @media screen and (max-width: 768px) {

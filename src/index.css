@@ -187,6 +187,10 @@ video {
     margin-right: auto;
     animation: MoveLeftRight 5s linear infinite;
   }
+  .AboutBio {
+    font-size: 15px;
+  }
+
   @keyframes MoveLeftRight {
     0%,
     100% {
@@ -195,5 +199,15 @@ video {
     50% {
       margin-left: 25vw;
     }
+  }
+}
+@media (max-width: 768px) {
+  .AboutBio {
+    font-size: 14px;
+  }
+}
+@media (max-width: 567px) {
+  .AboutBio {
+    font-size: 13px;
   }
 }
