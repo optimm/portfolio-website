@@ -6,8 +6,8 @@ import { Link as ScrollLink } from "react-scroll";
 const SiderBar = styled.div`
   background: #151418;
   position: fixed;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   /* top: 0; */
   left: 0;
   z-index: 999;
@@ -89,7 +89,7 @@ function Dropdown({ isOpen, toggle }) {
       <NavBtn onClick={toggle}>
         <a
           className="btn PrimaryBtn"
-          href="https://github.com/optimm/"
+          href="https://drive.google.com/file/d/1OqJ0-GGpmLD86znD_4aqzBuqGIwwxHCI/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
