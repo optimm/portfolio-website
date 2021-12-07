@@ -36,7 +36,14 @@ export const CardRight = styled.div`
     font-size: 1.5rem;
     font-weight: 400;
   }
-
+  @media (max-width: 500px) {
+    h4 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
   p {
     font-weight: 400;
     max-width: 400px;
@@ -69,6 +76,15 @@ export const Stack = styled.div`
   .tags {
     font-size: 15px;
     font-weight: 400;
+  }
+  @media (max-width: 500px) {
+    .stackTitle {
+      margin-right: 5px;
+      font-size: 14px;
+    }
+    .tags {
+      font-size: 12px;
+    }
   }
 `;
 
