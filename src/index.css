@@ -7,12 +7,28 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+html {
+  overflow-x: hidden;
+}
+html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
 body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #fafaff;
   font-weight: 400;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 main {
@@ -20,7 +36,7 @@ main {
   background-image: url(https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
 }
 
 a {
