@@ -50,6 +50,16 @@ export const ProjectList = [
     demo: true,
   },
   {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/newsit.png",
+    title: "NewsIt",
+    description:
+      "NewsIt is a cross platform mobile application for news and articles",
+    tech_stack: "React native, Context API",
+    github_url: "https://github.com/optimm/Newsit",
+    demo_url: "https://github.com/optimm/Newsit/blob/master/NewsIt.apk",
+    demo: true,
+  },
+  {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/modex.png",
     title: "Modex",
     description:
