@@ -1,7 +1,6 @@
 import React from "react";
 import { stackList, toolist } from "../../data/ProjectData";
 import {
-  Image,
   Technologies,
   Tech,
   TechImg,
