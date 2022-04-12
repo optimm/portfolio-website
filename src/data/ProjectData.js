@@ -36,7 +36,7 @@ export const ProjectList = [
       "Algox is a sorting visualization platform with clear and custom visualizations",
     tech_stack: "Reactjs, Css",
     github_url: "https://github.com/optimm/AlgoX",
-    demo_url: "https://optimm.github.io/AlgoX/",
+    demo_url: "https://algox.netlify.app/",
     demo: true,
   },
   {
