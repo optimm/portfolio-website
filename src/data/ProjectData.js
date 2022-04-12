@@ -11,6 +11,16 @@ export const ProjectList = [
     demo: true,
   },
   {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_3.png",
+    title: "AlgoX",
+    description:
+      "Algox is a sorting visualization platform with clear and custom visualizations",
+    tech_stack: "Reactjs, Css",
+    github_url: "https://github.com/optimm/AlgoX",
+    demo_url: "https://algox.netlify.app/",
+    demo: true,
+  },
+  {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/cescape.png",
     title: "Chatscape",
     description:
@@ -18,6 +28,16 @@ export const ProjectList = [
     tech_stack: "Node js , Express js, Socket.io, Peer js, Ejs",
     github_url: "https://github.com/optimm/ChatScape",
     demo: false,
+  },
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_5.png",
+    title: "Cryptx",
+    description:
+      "Cryptx is a message encryption and decryption tool , based on a basic algorithm written from scratch",
+    tech_stack: "Node js, HTML, CSS",
+    github_url: "https://github.com/optimm/Cryptx",
+    demo_url: "https://cryyptx.herokuapp.com/",
+    demo: true,
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_2.png",
@@ -29,16 +49,7 @@ export const ProjectList = [
     demo_url: "https://kaboom11.herokuapp.com",
     demo: true,
   },
-  {
-    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_3.png",
-    title: "AlgoX",
-    description:
-      "Algox is a sorting visualization platform with clear and custom visualizations",
-    tech_stack: "Reactjs, Css",
-    github_url: "https://github.com/optimm/AlgoX",
-    demo_url: "https://algox.netlify.app/",
-    demo: true,
-  },
+
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_4.png",
     title: "Multi utility",

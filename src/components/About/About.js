@@ -40,12 +40,13 @@ function About() {
             <div className="AboutBio">
               Hello! My name is <strong>Ayush Saxena</strong> I am a mern stack
               web developer , i like designing and developing web applications,
-              i also develop desktop applications with electron js and cross
-              platform mobile applications with react native, i am also a
-              competitive coder (now 4 ⭐ on Codechef), i like contributing to
-              open source enthusiastically , I am currently pursuing my btech in
-              cse from <strong>IIIT Jabalpur</strong>. Apart from coding i like
-              football and dancing.
+              i love working with node js and am very fluent in it i also   
+              develop desktop applications with electron js and cross platform
+              mobile applications with react native, i am also a competitive
+              coder (4 ⭐ on Codechef (1979) and Specialist on Codeforces), i
+              like contributing to open source enthusiastically , I am currently
+              pursuing my btech in cse from <strong>IIIT Jabalpur</strong>.
+              Apart from coding i like football and dancing.
             </div>
             <br />
             <br />
