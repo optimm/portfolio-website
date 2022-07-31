@@ -9,20 +9,20 @@ const Header = ({ toggle }) => {
           <img src="./start.png" alt="logo" />
         </Logo>
         <NavMenu>
-          <NavLink className="menu-item" to="projects" smooth={true}>
+          <NavLink className="menu-item" to="projects" >
             Projects
           </NavLink>
-          <NavLink className="menu-item" to="about" smooth={true}>
+          <NavLink className="menu-item" to="about" >
             About
           </NavLink>
-          <NavLink className="menu-item" to="contact" smooth={true}>
+          <NavLink className="menu-item" to="contact" >
             Contact
           </NavLink>
         </NavMenu>
         <NavBtn>
           <a
             className="btn PrimaryBtn"
-            href="https://drive.google.com/file/d/1001JNUwRPM-XY_6NF9MDu5oq4AGiVeeJ/view?usp=sharing"
+            href="https://drive.google.com/file/d/17YcctcDZX0T1zdF7HPtP__X_Zbi6gKJi/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

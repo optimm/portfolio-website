@@ -27,7 +27,8 @@ export const ProjectList = [
       "ChatScape is a application to video and text chat with stangers",
     tech_stack: "Node js , Express js, Socket.io, Peer js, Ejs",
     github_url: "https://github.com/optimm/ChatScape",
-    demo: false,
+    demo_url: "https://chatscape.herokuapp.com/",
+    demo: true,
   },
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_5.png",
@@ -49,15 +50,14 @@ export const ProjectList = [
     demo_url: "https://kaboom11.herokuapp.com",
     demo: true,
   },
-
   {
-    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_4.png",
-    title: "Multi utility",
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_6.png",
+    title: "Findit",
     description:
-      "A multi utility website with calculator,weather, calendar and to do list features",
-    tech_stack: "HTML, JavaScript, Css",
-    github_url: "https://github.com/optimm/hack-web-final",
-    demo_url: "https://optimm.github.io/hack-web-final/",
+      "Findit is a web app for recommending and exploring nearby stores and facilities according to user's needs.",
+    tech_stack: "ReactJs, Redux",
+    github_url: "https://github.com/optimm/store-app",
+    demo_url: "https://findittt.netlify.app/",
     demo: true,
   },
   {
@@ -70,6 +70,28 @@ export const ProjectList = [
     demo_url: "https://github.com/optimm/Newsit/blob/master/NewsIt.apk",
     demo: true,
   },
+
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_7.png",
+    title: "Shopping website for automated fabrication products",
+    description:"Developed a web app for placing orders of parts that are manufactured by automation, Built the website for mechanical department of BMS college of engineering",
+    tech_stack: "ReactJs, Redux",
+    github_url: "https://github.com/optimm/Design-Configurator-Shopping-App",
+    demo_url: "https://mcenterprises.netlify.app/",
+    demo: true,
+  },
+
+  {
+    img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_4.png",
+    title: "Multi utility",
+    description:
+      "A multi utility website with calculator,weather, calendar and to do list features",
+    tech_stack: "HTML, JavaScript, Css",
+    github_url: "https://github.com/optimm/hack-web-final",
+    demo_url: "https://optimm.github.io/hack-web-final/",
+    demo: true,
+  },
+ 
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/modex.png",
     title: "Modex",
