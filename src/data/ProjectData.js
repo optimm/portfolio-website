@@ -74,7 +74,7 @@ export const ProjectList = [
   {
     img: "https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/project_7.png",
     title: "Shopping website for automated fabrication products",
-    description:"Developed a web app for placing orders of parts that are manufactured by automation, Built the website for mechanical department of BMS college of engineering",
+    description:"Developed a web app for placing orders of parts that are manufactured by automation.",
     tech_stack: "ReactJs, Redux",
     github_url: "https://github.com/optimm/Design-Configurator-Shopping-App",
     demo_url: "https://mcenterprises.netlify.app/",
