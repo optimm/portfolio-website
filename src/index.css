@@ -33,7 +33,6 @@ body {
 
 main {
   background: #151418;
-  background-image: url(https://raw.githubusercontent.com/optimm/portfolio-website/master/src/Assets/bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -125,15 +124,12 @@ video {
   display: flex;
   flex-direction: column;
   border-radius: 18px;
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);
-  box-shadow: 6px 6px 17px #b3b3b3, -6px -6px 17px #ffffff;
+  background: #fafaff;
+  box-shadow: 1px 1px 5px #b3b3b3, -1px -1px 1px #ffffff;
 }
 
 .AboutBio,
 .tagline2 {
-  /* text-align: center; */
-  max-width: 680px;
-  margin: 0 auto;
   color: #3a3a3a;
   font-size: 16px;
   line-height: 1.8;
@@ -153,10 +149,24 @@ video {
   font-weight: 700;
   margin-bottom: 3.5rem;
 }
-.ProjectWrapper {
-  margin-top: -1rem;
+.SectionTitle.experience{
+  color: #f6f6f6;
 }
 
+.SectionTitle.contact{
+  color: #f6f6f6;
+}
+
+#projects{
+  padding: 5rem 0;
+  margin: 70px 0px;
+}
+
+#experience {
+  padding: 5rem 0;
+  background: #151418;
+  margin: 70px 0px;
+}
 /* ------------------------------------ Media for Container */
 @media (min-width: 576px) {
   .Container {
@@ -181,56 +191,44 @@ video {
     max-width: 1000px;
   }
 }
-.main-image {
-  animation: MoveLeftRight 9s linear infinite;
-}
-@keyframes MoveLeftRight {
-  0%,
-  100% {
-    margin-left: 260px;
-  }
-  50% {
-    margin-left: 70px;
-  }
-}
-#projects {
-  margin-top: 100px;
-}
 
-#experience {
-  margin-top: 100px;
-}
+
 @media (max-width: 992px) {
+  .SectionTitle {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
   .main-image {
     height: 240px;
     margin-left: auto;
     margin-right: auto;
-    animation: MoveLeftRight 5s linear infinite;
   }
   .AboutBio {
     font-size: 15px;
   }
-
-  @keyframes MoveLeftRight {
-    0%,
-    100% {
-      margin-left: 15vw;
-    }
-    50% {
-      margin-left: 25vw;
-    }
-  }
 }
+
 @media (max-width: 768px) {
   .AboutBio {
     font-size: 14px;
   }
+  #projects{
+    padding: 3rem 0;
+    margin: 50px 0px;
+  }
+  
+  #experience {
+    padding: 3rem 0;
+    margin: 50px 0px;
+  }
 }
+
 @media (max-width: 567px) {
   .AboutBio {
     font-size: 13px;
   }
 }
+
 .strong {
   color: rgb(129, 129, 129);
 }

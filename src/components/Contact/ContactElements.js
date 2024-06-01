@@ -1,32 +1,39 @@
 import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
-  margin: 5rem 0;
+  background: #151418;
+  margin-top: -10px;
+
+  .footer {
+    text-align: center;
+    padding-top : 3rem;
+    padding-bottom:2rem;
+    color: #fff;
+    a {
+      text-decoration: underline;
+    }
+  }
 `;
 
 export const Email = styled.div`
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom:3rem;
   span {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    margin-bottom: 0.8rem;
-    color: #252525;
+    color: rgb(200, 200, 200);
+    margin-bottom: 0rem;
   }
 
-  @media (min-width: 576px) {
+  @media (max-width: 992px) {
+    padding-bottom:1rem;
+    flex-direction: column;
+    align-items: center;
     span {
-      font-size: 1rem;
-    }
-  }
-  @media (min-width: 992px) {
-    flex-direction: row;
-    span {
-      margin-bottom: 0;
-      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
     }
   }
 `;

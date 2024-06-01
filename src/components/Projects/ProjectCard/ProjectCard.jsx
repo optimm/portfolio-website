@@ -7,13 +7,9 @@ import {
   Stack,
   BtnGroup,
 } from "./ProjectCardElements";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 function ProjectCard() {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
+
   return (
     <React.Fragment>
       {ProjectList.map((list, index) => (

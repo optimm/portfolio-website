@@ -1,14 +1,9 @@
 import React from "react";
-import { useEffect } from "react";
 import { ExperienceList } from "../../../data/ProjectData";
-import Aos from "aos";
 import { BtnGroup } from "../../Projects/ProjectCard/ProjectCardElements";
 import { ExpCard, ExperienceCardRight } from "./styles";
 
 function ExperienceCard() {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
   return (
     <React.Fragment>
       {ExperienceList.map((list, index) => (
@@ -18,7 +13,14 @@ function ExperienceCard() {
 
             <div className="role">{list.role}</div>
 
-            <p>{list.description}</p>
+            <div className="description">
+              <ul>
+                {list.description.length > 0 &&
+                  list.description.map((desc, ind) => (
+                    <li className="description-item" key={ind}>{desc}</li>
+                  ))}
+              </ul>
+            </div>
 
             {list.isc && (
               <BtnGroup>

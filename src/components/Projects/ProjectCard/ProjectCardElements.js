@@ -5,10 +5,15 @@ export const Card = styled.div`
   grid-gap: 2rem;
   margin-bottom: 4rem;
   grid-template-columns: 1fr;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 0.1px solid #151418;
   padding-bottom: 2rem;
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
     border-bottom: 0;
     padding-bottom: 0;
   }

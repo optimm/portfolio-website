@@ -7,13 +7,8 @@ import {
   TechName,
   ContactWrapper,
 } from "./AboutElements";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 function About() {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
   return (
     <React.Fragment>
       <svg
@@ -36,53 +31,60 @@ function About() {
       <ContactWrapper id="about">
         <div className="Container" data-aos="fade-up">
           <div className="SectionTitle">About Me</div>
-          <div className="BigCard">
-            <div className="AboutBio">
-              Hello, I'm <strong>Ayush Saxena</strong>, a passionate software
-              developer with expertise in JavaScript, TypeScript, C++, and Java,
-              along with related frameworks. Currently I am in my final year of
-              my B.Tech in CSE at IIIT Jabalpur.
-              <br />
-              I've earned a <strong>5⭐ rating on Codechef</strong> and a{" "}
-              <strong>Specialist rating on Codeforces</strong>, solving over{" "}
-              <strong>700 problems</strong> on various coding platforms. I'm
-              also an active open-source contributor, constantly learning and
-              growing.
-              <br />I was among the 44 students selected for the{" "}
-              <strong>Summer of Bitcoin program 2023</strong> out of 10k+
-              participants from around the world.
-              <br />
-              As a well-rounded individual, I also serve as the{" "}
-              <strong>coordinator of the Counseling Committee</strong> at IIIT
-              Jabalpur. Let's create something amazing together! Besides coding,
-              I enjoy football and dancing.
-            </div>
+          <div className="AboutBio">
+            Hello, I'm <strong>Ayush Saxena</strong>, a passionate software
+            developer with expertise in Java, JavaScript, TypeScript, C++, along
+            with their related frameworks. I recently completed my B.Tech in
+            Computer Science and Engineering from <strong>IIIT Jabalpur</strong>{" "}
+            and am currently working as a <strong>SDE Intern at Meesho</strong>,
+            Working on democratizing internet commerce for the next billion
+            Indians.
             <br />
             <br />
-
-            <div className="AboutBio tagline2">My Technical Skills</div>
+            In my problem solving journey I earned a{" "}
+            <strong>5⭐ rating on CodeChef</strong>,{" "}
+            <strong>Specialist rating on Codeforces</strong> and{" "}
+            <strong>Knight badge on Leetcode</strong> having solved over 700
+            problems on various coding platforms.
             <br />
-            <Technologies data-aos="fade-up">
-              {stackList.map((stack, index) => (
-                <Tech key={index} className="tech">
-                  <TechImg src={stack.img} alt={stack.name} />
-                  <TechName>{stack.name}</TechName>
-                </Tech>
-              ))}
-            </Technologies>
+            As an active open-source contributor, I am always eager to learn and
+            grow. I was among the <strong>only 44 students</strong> selected for
+            the <strong>Summer of Bitcoin program 2023</strong> out of 10k+
+            participants from around the world.
             <br />
-
-            <div className="AboutBio tagline2">Tools That I Use</div>
             <br />
-            <Technologies data-aos="fade-up">
-              {toolist.map((stack, index) => (
-                <Tech key={index} className="tech">
-                  <TechImg src={stack.img} alt={stack.name} />
-                  <TechName>{stack.name}</TechName>
-                </Tech>
-              ))}
-            </Technologies>
+            As a well-rounded individual, I also served as the{" "}
+            <strong>Coordinator of the Counseling Committee</strong> at IIIT
+            Jabalpur.
+            <br />I am currently learning Go lang and System Design. Besides
+            coding, I enjoy football and dancing. Let's collaborate and create
+            something amazing together!
           </div>
+          <br />
+          <br />
+
+          <div className="AboutBio tagline2">My Technical Skills</div>
+          <br />
+          <Technologies data-aos="fade-up">
+            {stackList.map((stack, index) => (
+              <Tech key={index} className="tech">
+                <TechImg src={stack.img} alt={stack.name} />
+                <TechName>{stack.name}</TechName>
+              </Tech>
+            ))}
+          </Technologies>
+          <br />
+
+          <div className="AboutBio tagline2">Tools That I Use</div>
+          <br />
+          <Technologies data-aos="fade-up">
+            {toolist.map((stack, index) => (
+              <Tech key={index} className="tech">
+                <TechImg src={stack.img} alt={stack.name} />
+                <TechName>{stack.name}</TechName>
+              </Tech>
+            ))}
+          </Technologies>
         </div>
       </ContactWrapper>
     </React.Fragment>

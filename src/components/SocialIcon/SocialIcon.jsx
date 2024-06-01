@@ -1,10 +1,11 @@
 import React from "react";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 import styled from "styled-components";
 
 export const SocialDiv = styled.div`
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: none;
   ul {
     display: flex;
@@ -14,8 +15,8 @@ export const SocialDiv = styled.div`
   }
 
   a {
-    font-size: 2.5rem;
-    color: #151418;
+    font-size: 1.7rem;
+    color: rgb(180, 180, 180);
     transition: 0.2s ease-in;
     &:hover {
       color: rgb(57, 134, 250);
@@ -26,8 +27,8 @@ export const SocialDiv = styled.div`
     margin-left: 2rem;
   }
 
-  @media screen and (max-width: 880px) {
-    display: block;
+  @media screen and (max-width: 1200px) {
+      display: block;
   }
 `;
 
@@ -60,6 +61,15 @@ function SocialIcon() {
             rel="noopener noreferrer"
           >
             <FaInstagram />
+          </a>
+        </li>
+        <li className="item">
+          <a
+            href="https://x.com/AyushSaxena823"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaXTwitter />
           </a>
         </li>
       </ul>

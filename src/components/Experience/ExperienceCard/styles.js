@@ -2,8 +2,15 @@ import styled from "styled-components";
 
 export const ExpCard = styled.div`
   margin-bottom: 4rem;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 0.1px solid rgb(180, 180, 180);
   padding-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
   @media (min-width: 992px) {
     border-bottom: 0;
     padding-bottom: 0;
@@ -18,18 +25,32 @@ export const ExperienceCardRight = styled.div`
 
   h4 {
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 600;
+    color: rgb(224, 224, 224);
+  }
+  ul{
+    list-style-type: disc;
+    margin-left : 20px;
+  }
+  .description{
+    padding: 5px 0px;
+  }
+
+  .description-item {
+    color: rgb(180, 180, 180);
   }
 
   .role {
     font-size: 1rem;
+    font-weight: 500;
     margin-top: 10px;
+    color: rgb(224, 224, 224);
   }
   @media (max-width: 500px) {
     h4 {
       font-size: 1.2rem;
     }
-    p {
+    .description-item {
       font-size: 13px;
       text-align: justify;
     }
@@ -40,12 +61,11 @@ export const ExperienceCardRight = styled.div`
     }
   }
 
-  p {
+  .description-item {
     font-weight: 400;
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 1rem;
-    color: rgba(0, 0, 0, 0.815);
+    margin-top: 5px;
+    margin-bottom: 5px;
     text-align: justify;
 
     @media (min-width: 992px) {

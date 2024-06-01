@@ -35,6 +35,8 @@ export const HeroWrapper = styled.div`
 `;
 
 export const HeroLeft = styled.div`
+  padding: 5rem 0;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +61,7 @@ export const HeroLeft = styled.div`
 
   h5 {
     font-size: 1.6rem;
-    color: rgb(119, 119, 121);
+    color: rgb(180, 180, 180);
     margin-bottom: 1rem;
     font-weight: 400;
   }
@@ -67,11 +69,12 @@ export const HeroLeft = styled.div`
   p {
     font-size: 18px;
     margin-top: 20px;
-    color: rgb(119, 119, 121);
+    color: rgb(180, 180, 180);
     opacity: 0.85;
   }
 
   @media screen and (max-width: 992px) {
+    max-width: 100%;
     text-align: center;
     align-items: center;
     margin-bottom: 2rem;
@@ -102,22 +105,6 @@ export const HeroLeft = styled.div`
     p {
       font-size: 13px;
     }
-  }
-`;
-
-export const HeroRight = styled.div`
-  flex: 1;
-  justify-content: center;
-  display: flex;
-`;
-
-export const Image = styled.img`
-  height: 290px;
-  width: auto;
-  margin-top: 50px;
-  @media (max-width: 992px) {
-    height: 240px;
-    margin-bottom: 50px;
   }
 `;
 

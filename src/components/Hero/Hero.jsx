@@ -6,21 +6,17 @@ import {
   HeroContainer,
   HeroWrapper,
   HeroLeft,
-  HeroRight,
-  Image,
   ScrollDown,
   ScrollLink,
 } from "./HeroElements";
 function Hero() {
   const [isOpen, setIsOpen] = useState(false);
 
-
   const toggle = () => {
     setIsOpen(!isOpen);
   };
   return (
     <main>
-     
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
       <HeroContainer>
@@ -29,13 +25,12 @@ function Hero() {
             <h1>Hi, I'm Ayush Saxena</h1>
             {/* <h5>Frontend Developer</h5> */}
             <p className="description">
-              I design and code web, desktop and mobile applications and also do
-              competitive coding.
+              I'm a software developer skilled in Full-Stack Development and
+              Software Architecture. I enjoy discussing and building systems at
+              scale. Let's connect and chat about
+              systems, development, or anything in between!
             </p>
           </HeroLeft>
-          <HeroRight>
-            <Image className="main-image" src="./pf.png" alt="man-svgrepo" />
-          </HeroRight>
         </HeroWrapper>
         <ScrollDown to="projects">
           <ScrollLink>

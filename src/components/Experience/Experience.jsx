@@ -6,7 +6,7 @@ function Experience() {
     <React.Fragment>
       <div className="ProjectWrapper" id="experience">
         <div className="Container">
-          <div className="SectionTitle">Experience</div>
+          <div className="SectionTitle experience">Experience</div>
           <ExperienceCard />
         </div>
       </div>

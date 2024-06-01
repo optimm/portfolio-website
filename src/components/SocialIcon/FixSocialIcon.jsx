@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import styled from "styled-components";
 
 const Social = styled.div`
@@ -26,7 +27,7 @@ const Social = styled.div`
   }
 
   a {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgb(119, 119, 121);
     transition: 0.2s ease-in;
     &:hover {
@@ -34,9 +35,11 @@ const Social = styled.div`
     }
   }
 
-  @media screen and (max-width: 880px) {
+@media screen and (max-width: 1200px) {
     display: none;
-  }
+}
+
+
 `;
 function FixSocialIcon() {
   return (
@@ -67,6 +70,15 @@ function FixSocialIcon() {
             rel="noopener noreferrer"
           >
             <FaInstagram />
+          </a>
+        </li>
+        <li className="item">
+          <a
+            href="https://x.com/AyushSaxena823"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaXTwitter />
           </a>
         </li>
       </ul>
