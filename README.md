@@ -1,9 +1,10 @@
 # Portfolio Website
 Welcome to my personal portfolio website! This website showcases my skills, projects, and experiences as a software developer. It's built using React.js and serves as a platform to highlight my expertise and achievements.
 
+![sample image](https://github.com/optimm/portfolio-website/blob/master/public/sample.png)
+
 ### Tech Stack
 - ReactJs
-  
 
 #### How to Run Locally
 
