@@ -17,13 +17,15 @@ function ExperienceCard() {
               <ul>
                 {list.description.length > 0 &&
                   list.description.map((desc, ind) => (
-                    <li className="description-item" key={ind}>{desc}</li>
+                    <li className="description-item" key={ind}>
+                      {desc}
+                    </li>
                   ))}
               </ul>
             </div>
 
-            {list.isc && (
-              <BtnGroup>
+            <BtnGroup>
+              {list.isc && (
                 <a
                   className="btn PrimaryBtn"
                   href={list.certificate}
@@ -32,8 +34,21 @@ function ExperienceCard() {
                 >
                   Certificate ➜
                 </a>
-              </BtnGroup>
-            )}
+              )}
+
+              {list.media_links &&
+                list.media_links.map((media, idx) => (
+                  <a
+                    key={idx}
+                    className="btn PrimaryBtn"
+                    href={media.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {media.label} ➜
+                  </a>
+                ))}
+            </BtnGroup>
           </ExperienceCardRight>
         </ExpCard>
       ))}

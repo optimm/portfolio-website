@@ -5,18 +5,18 @@ import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import FixSocialIcon from "../components/SocialIcon/FixSocialIcon";
 import Experience from "../components/Experience/Experience";
+import Blogs from "../components/Blogs/Blogs";
 
-const Home = () =>
- (
-    <React.Fragment>
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
-      <FixSocialIcon />
-    </React.Fragment>
-  );
-
+const Home = () => (
+  <React.Fragment>
+    <Hero />
+    <About />
+    <Experience />
+    <Blogs />
+    <Projects />
+    <Contact />
+    <FixSocialIcon />
+  </React.Fragment>
+);
 
 export default Home;

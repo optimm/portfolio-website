@@ -99,6 +99,20 @@ video {
   color: #010606;
 }
 
+@media (max-width: 768px) {
+  .btn {
+    padding: 8px 0.8rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    padding: 7px 0.7rem;
+    font-size: 13px;
+  }
+}
+
 .SecondarBtn:hover {
   background: rgb(57, 134, 250);
   color: #fff;
@@ -167,6 +181,11 @@ video {
   background: #151418;
   margin: 70px 0px;
 }
+
+#blogs {
+  padding: 5rem 0;
+  margin: 70px 0px 0px 0px;
+}
 /* ------------------------------------ Media for Container */
 @media (min-width: 576px) {
   .Container {
@@ -220,6 +239,11 @@ video {
   #experience {
     padding: 3rem 0;
     margin: 50px 0px;
+  }
+
+  #blogs {
+    padding: 3rem 0;
+    margin: 50px 0px 0px 0px;
   }
 }
 

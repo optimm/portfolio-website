@@ -25,10 +25,7 @@ function Hero() {
             <h1>Hi, I'm Ayush Saxena</h1>
             {/* <h5>Frontend Developer</h5> */}
             <p className="description">
-              I'm a software developer skilled in Full-Stack Development and
-              Software Architecture. I enjoy discussing and building systems at
-              scale. Let's connect and chat about
-              systems, development, or anything in between!
+            I'm a software developer specializing in Full-Stack Development, Software Architecture, and Generative AI. I enjoy building and discussing scalable systems, solving complex problems, and crafting efficient solutions. Currently, as a Founding Engineer at Meesho AI Services, I'm developing LLM-powered solutions for the next generation. Let's connect and chat about systems, development, or anything in between!
             </p>
           </HeroLeft>
         </HeroWrapper>

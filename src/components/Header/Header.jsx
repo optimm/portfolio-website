@@ -15,6 +15,9 @@ const Header = ({ toggle }) => {
           <NavLink className="menu-item" to="projects">
             Projects
           </NavLink>
+          <NavLink className="menu-item" to="blogs">
+            Blogs
+          </NavLink>
           <NavLink className="menu-item" to="about">
             About
           </NavLink>
@@ -25,7 +28,7 @@ const Header = ({ toggle }) => {
         <NavBtn>
           <a
             className="btn PrimaryBtn"
-            href="https://drive.google.com/file/d/1AQZFbc9-eZcHeMSjuEpdTRH9tEhb9Fxq/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1-sp5w34U0J1q715w7g0Nytt7hEl1gxd0/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

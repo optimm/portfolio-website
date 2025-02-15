@@ -72,6 +72,14 @@ function Dropdown({ isOpen, toggle }) {
         <NavLink
           onClick={toggle}
           className="menu-item"
+          to="blogs"
+          smooth={true}
+        >
+          Blogs
+        </NavLink>
+        <NavLink
+          onClick={toggle}
+          className="menu-item"
           to="about"
           smooth={true}
         >
@@ -89,7 +97,7 @@ function Dropdown({ isOpen, toggle }) {
       <NavBtn onClick={toggle}>
         <a
           className="btn PrimaryBtn"
-          href="https://drive.google.com/file/d/1OqJ0-GGpmLD86znD_4aqzBuqGIwwxHCI/view?usp=sharing"
+          href="https://drive.google.com/file/d/1-sp5w34U0J1q715w7g0Nytt7hEl1gxd0/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

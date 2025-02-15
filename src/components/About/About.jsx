@@ -32,37 +32,40 @@ function About() {
         <div className="Container" data-aos="fade-up">
           <div className="SectionTitle">About Me</div>
           <div className="AboutBio">
-            Hello, I'm <strong>Ayush Saxena</strong>, a passionate software
-            developer with expertise in Java, JavaScript, TypeScript, C++, along
-            with their related frameworks. I recently completed my B.Tech in
-            Computer Science and Engineering from <strong>IIIT Jabalpur</strong>{" "}
-            and am currently working as a <strong>SDE Intern at Meesho</strong>,
-            Working on democratizing internet commerce for the next billion
-            Indians.
+            I'm a <strong>Software Developer</strong> passionate about building{" "}
+            scalable and intelligent systems With a strong focus on system
+            design, distributed computing, and generative AI. I'm currently
+            developing <strong>LLM-powered solutions</strong> as a{" "}
+            <strong>Founding Engineer at Meesho AI Services</strong>.<br />I
+            played a key role as a core developer in building{" "}
+            <strong>India's first GenAI-powered voicebot at scale</strong>.
             <br />
+            <br />I was also among the <strong>44 students</strong> selected for
+            the <strong>Summer of Bitcoin 2023</strong> from over{" "}
+            <strong>10,000 applicants</strong>.
             <br />
-            In my problem solving journey I earned a{" "}
+            In my problem-solving journey, I earned a{" "}
             <strong>5⭐ rating on CodeChef</strong>,{" "}
-            <strong>Specialist rating on Codeforces</strong> and{" "}
-            <strong>Knight badge on Leetcode</strong> having solved over 700
-            problems on various coding platforms.
+            <strong>Specialist rating on Codeforces</strong>, and{" "}
+            <strong>Knight badge on Leetcode</strong>, having solved over{" "}
+            <strong>700 problems</strong> on various coding platforms.
             <br />
-            As an active open-source contributor, I am always eager to learn and
-            grow. I was among the <strong>only 44 students</strong> selected for
-            the <strong>Summer of Bitcoin program 2023</strong> out of 10k+
-            participants from around the world.
+            <br />I hold a{" "}
+            <strong>
+              B.Tech in Computer Science and Engineering from IIIT Jabalpur
+            </strong>{" "}
+            and have a deep interest in problem-solving.
             <br />
+            As a well-rounded individual, I also served as the Coordinator of
+            the Counseling Committee at IIIT Jabalpur.
             <br />
-            As a well-rounded individual, I also served as the{" "}
-            <strong>Coordinator of the Counseling Committee</strong> at IIIT
-            Jabalpur.
-            <br />I am currently learning Go lang and System Design. Besides
-            coding, I enjoy football and dancing. Let's collaborate and create
-            something amazing together!
+            Currently, I'm exploring{" "}
+            <strong>Deep Learning, Generative AI, and System Design</strong>,
+            while also enjoying <strong>football and dancing</strong>.<br />
+            Let's connect and build something incredible together! 🚀
           </div>
           <br />
           <br />
-
           <div className="AboutBio tagline2">My Technical Skills</div>
           <br />
           <Technologies data-aos="fade-up">

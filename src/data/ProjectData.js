@@ -55,7 +55,25 @@ export const ProjectList = [
 export const ExperienceList = [
   {
     title: "Meesho",
-    role: "Software Developer Intern (Jan 2024 - Present)",
+    role: "Software Developer 1 (July 2024 - Present)",
+    description: [
+      "Contributing to the development of scalable and innovative GenAI solutions, shaping the future of AI-driven e-commerce.",
+      "Designed and built India's first GenAI-powered voicebot for customer support, scaling it to handle over 100,000 calls per day with near-zero latency.",
+      "Developed a multimodal and DAG-based architecture for the LLM-powered chatbot, efficiently managing over 1 million queries daily while significantly reducing LLM inference costs.",
+      "Engineered generative vision model solutions for catalogue enrichment, enhancing product discovery and boosting engagement.",
+      "Optimized real-time experimentation infrastructure, enabling concurrent A/B tests for GenAI-driven catalogue enrichment, leading to more effective and data-driven improvements.",
+    ],
+    isc: false,
+    media_links: [
+      {
+        label: "News Feature",
+        url: "https://timesofindia.indiatimes.com/business/india-business/meesho-launches-voicebot-to-cut-customer-support-costs-by-one-fourth/articleshow/115706660.cms",
+      },
+    ],
+  },
+  {
+    title: "Meesho",
+    role: "Software Developer Intern (Jan 2024 - June 2024)",
     description: [
       "I conceptualized and executed the migration of the complete return shipment tracking flow from a legacy PHP service to an event-based Java (Spring Boot) service, which nowhandles over 5 million requests per day. Demonstrating rapid development, I completed the project within a tight deadline, writing over 20,000 lines of code in a month.",
       "In another project, I upgraded the experimentation infrastructure to enable simultaneous A/B experiments on catalogue images. Previously, the infrastructure did not support running multiple experiments concurrently which was required as a part of GenAI catalogue enrichment. My enhancements allowed for this functionality, significantly improving the experimentation process.",
@@ -67,7 +85,7 @@ export const ExperienceList = [
     description: [
       "I played a pivotal role in enhancing the lightning watchtower system. Leveraging technologies such as TypeScript, ReactJS, NestJS, and Rust. I crafted an intuitive web-based graphical user interface (GUI) that significantly enhanced data visualization and analysis for over 20 tower administrators.",
       "I fortified the error-handling mechanisms in teos-cli, providing clearer error identification and messages.",
-      "One of my significant accomplishments was the inception of a scalable and maintainable project from the ground up, which now serves as a solid foundation for contributions for a thriving community of 55+ Eye of Satoshi enthusiasts."
+      "One of my significant accomplishments was the inception of a scalable and maintainable project from the ground up, which now serves as a solid foundation for contributions for a thriving community of 55+ Eye of Satoshi enthusiasts.",
     ],
     role: "Software Developer Intern (May 2023 - Aug 2023)",
     certificate:
@@ -78,17 +96,18 @@ export const ExperienceList = [
     title: "ProbeAI",
     description: [
       "At Probe AI, a copilot for data analysts that generates queries from text based on specific databases, I spearheaded efforts to bolster the platform's functionality. I harnessed the power of NestJS, ReactJS, AWS, and Metabase to develop ingenious back-end solutions for query auto-fix and dry run query features, resulting in an impressive surge in query accuracy from 85% to 94%.",
-      "I empowered Probe AI users by seamlessly integrating support for four distinct types of databases, including MySQL, PostgreSQL, BigQuery, and Snowflake, to be used simultaneously on the platform." ,
-      "Collaborating with a talented team of developers, I contributed to the creation of a Probe AI Chrome extension for the Metabase platform, which rapidly garnered over 50 downloads within just one week of its release."
+      "I empowered Probe AI users by seamlessly integrating support for four distinct types of databases, including MySQL, PostgreSQL, BigQuery, and Snowflake, to be used simultaneously on the platform.",
+      "Collaborating with a talented team of developers, I contributed to the creation of a Probe AI Chrome extension for the Metabase platform, which rapidly garnered over 50 downloads within just one week of its release.",
     ],
     role: "Software Developer Intern (Apr 2023 - May 2023)",
     isc: false,
   },
   {
     title: "Fyntune Solutions Pvt. Ltd.",
-    description:
-      ["My tenure as a ReactJs Developer Intern at Fyntune Solutions Private Ltd was marked by transformative contributions to more than 10 digital insurance products.",
-      "Employing ReactJS, Redux, and impeccable API integration, I successfully led the launch of six projects and implemented a comprehensive front-end overhaul. This strategic restructuring led to a remarkable 36% reduction in load times and a 20% decrease in API calls through the implementation of client-side caching mechanisms. These optimizations significantly improved the user experience while simultaneously enhancing the overall efficiency and performance of the digital insurance products."],
+    description: [
+      "My tenure as a ReactJs Developer Intern at Fyntune Solutions Private Ltd was marked by transformative contributions to more than 10 digital insurance products.",
+      "Employing ReactJS, Redux, and impeccable API integration, I successfully led the launch of six projects and implemented a comprehensive front-end overhaul. This strategic restructuring led to a remarkable 36% reduction in load times and a 20% decrease in API calls through the implementation of client-side caching mechanisms. These optimizations significantly improved the user experience while simultaneously enhancing the overall efficiency and performance of the digital insurance products.",
+    ],
     role: "ReactJs Developer Intern (Jun 2022 - Nov 2022)",
     certificate:
       "https://drive.google.com/file/d/1nrqwePMKE9kkETIBW1JKFjjUIW4DZFQx/view?usp=sharing",
@@ -96,9 +115,44 @@ export const ExperienceList = [
   },
 ];
 
+export const BlogList = [
+  {
+    title: "What is Redis and how does it work Internally",
+    description:
+      "Deep dive into the redis and its internal working.",
+    date: "March 2024",
+    url: "https://medium.com/@ayushsaxena823/what-is-redis-and-how-does-it-work-cfe2853eb9a9",
+    tags: ["Redis", "Architecture"],
+  },
+  {
+    title: "My Summer of Bitcoin Story",
+    description:
+      "My complete journey of Summer of bitcoin 2023 at Eye of Satoshi",
+    date: "August 2024",
+    url: "https://medium.com/@ayushsaxena823/my-summer-of-bitcoin-story-4f576b03ad03",
+    tags: ["Summer of Bitcoin", "Eye of Satoshi"],
+  },
+];
+
 // --------------------------------------- Skills
 
 export const stackList = [
+  {
+    img: "/assets/skill/python.png",
+    name: "Python",
+  },
+  {
+    img: "/assets/skill/flask.png",
+    name: "Flask",
+  },
+  {
+    img: "/assets/skill/ai.png",
+    name: "Generative AI/ LLM",
+  },
+  {
+    img: "/assets/skill/fastapi.png",
+    name: "FastAPI",
+  },
   {
     img: "/assets/skill/java.png",
     name: "Java",
@@ -128,16 +182,8 @@ export const stackList = [
     name: "ReactJS",
   },
   {
-    img: "/assets/skill/redux.png",
-    name: "Redux",
-  },
-  {
     img: "/assets/skill/nextjs.svg",
     name: "Next Js",
-  },
-  {
-    img: "/assets/skill/smartphone.png",
-    name: "React Native",
   },
   {
     img: "/assets/skill/c.png",
@@ -171,17 +217,17 @@ export const stackList = [
     img: "/assets/skill/rust.svg",
     name: "Rust",
   },
-  {
-    img: "/assets/skill/go.png",
-    name: "GoLang",
-  },
-  {
-    img: "/assets/skill/python.png",
-    name: "Python",
-  },
 ];
 
 export const toolist = [
+  {
+    img: "/assets/skill/cursor.png",
+    name: "Cursor",
+  },
+  {
+    img: "/assets/skill/chat-gpt.png",
+    name: "ChatGPT",
+  },
   {
     img: "/assets/skill/ubuntu.png",
     name: "Ubuntu",
@@ -191,8 +237,8 @@ export const toolist = [
     name: "Vs code",
   },
   {
-    img:"/assets/skill/intellij.png",
-    name:"IntelliJ"
+    img: "/assets/skill/intellij.png",
+    name: "IntelliJ",
   },
   {
     img: "/assets/skill/docker.png",
