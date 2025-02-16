@@ -28,16 +28,25 @@ export const ExperienceCardRight = styled.div`
     font-weight: 600;
     color: rgb(224, 224, 224);
   }
-  ul{
-    list-style-type: disc;
-    margin-left : 20px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
-  .description{
+
+  .description {
     padding: 5px 0px;
   }
 
   .description-item {
     color: rgb(180, 180, 180);
+    padding: 3px 0px;
+  }
+
+  strong {
+    color: rgb(224, 224, 224);
+    font-weight: 500;
   }
 
   .role {
@@ -46,6 +55,7 @@ export const ExperienceCardRight = styled.div`
     margin-top: 10px;
     color: rgb(224, 224, 224);
   }
+
   @media (max-width: 500px) {
     h4 {
       font-size: 1.2rem;
@@ -72,6 +82,7 @@ export const ExperienceCardRight = styled.div`
       text-align: justify;
     }
   }
+
   @media (min-width: 992px) {
     align-items: flex-start;
     margin-top: 1rem;

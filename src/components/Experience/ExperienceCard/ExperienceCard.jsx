@@ -17,9 +17,11 @@ function ExperienceCard() {
               <ul>
                 {list.description.length > 0 &&
                   list.description.map((desc, ind) => (
-                    <li className="description-item" key={ind}>
-                      {desc}
-                    </li>
+                    <li
+                      className="description-item"
+                      key={ind}
+                      dangerouslySetInnerHTML={{ __html: desc }}
+                    />
                   ))}
               </ul>
             </div>

@@ -57,11 +57,10 @@ export const ExperienceList = [
     title: "Meesho",
     role: "Software Developer 1 (July 2024 - Present)",
     description: [
-      "Contributing to the development of scalable and innovative GenAI solutions, shaping the future of AI-driven e-commerce.",
-      "Designed and built India's first GenAI-powered voicebot for customer support, scaling it to handle over 100,000 calls per day with near-zero latency.",
-      "Developed a multimodal and DAG-based architecture for the LLM-powered chatbot, efficiently managing over 1 million queries daily while significantly reducing LLM inference costs.",
-      "Engineered generative vision model solutions for catalogue enrichment, enhancing product discovery and boosting engagement.",
-      "Optimized real-time experimentation infrastructure, enabling concurrent A/B tests for GenAI-driven catalogue enrichment, leading to more effective and data-driven improvements.",
+      "As a <strong>Founding Engineer at Meesho AI Services</strong>, I contribute to the development of scalable and innovative <strong>Generative AI solutions</strong>.",
+      "I developed an <strong>LLM-based customer support voice bot</strong> as a core developer (<strong>India's first Gen AI Voicebot at scale</strong>), reducing the <strong>cost per call by 75%</strong> and decreasing <strong>average handling time by 40%</strong>.",
+      "I implemented a <strong>Multimodel and DAG-based approach</strong> for the LLM-based customer support chatbot, which handles over <strong>1 million queries per day</strong>, improving chat quality and reducing LLM costs.",
+      "I engineered generative vision model solutions for <strong>catalogue enrichment</strong>, enhancing product discovery and boosting engagement.",
     ],
     isc: false,
     media_links: [
@@ -75,17 +74,17 @@ export const ExperienceList = [
     title: "Meesho",
     role: "Software Developer Intern (Jan 2024 - June 2024)",
     description: [
-      "I conceptualized and executed the migration of the complete return shipment tracking flow from a legacy PHP service to an event-based Java (Spring Boot) service, which nowhandles over 5 million requests per day. Demonstrating rapid development, I completed the project within a tight deadline, writing over 20,000 lines of code in a month.",
-      "In another project, I upgraded the experimentation infrastructure to enable simultaneous A/B experiments on catalogue images. Previously, the infrastructure did not support running multiple experiments concurrently which was required as a part of GenAI catalogue enrichment. My enhancements allowed for this functionality, significantly improving the experimentation process.",
+      "I conceptualized and executed the migration of the complete return shipment tracking flow from a legacy PHP service to an event-based Java (Spring Boot) service, which now handles over <strong>5 million requests per day</strong>. Demonstrating rapid development, I completed the project within a tight deadline, writing over <strong>20,000 lines of code</strong> in a month.",
+      "In another project, I upgraded the experimentation infrastructure to enable <strong>simultaneous A/B experiments</strong> on catalogue images. Previously, the infrastructure did not support running multiple experiments concurrently which was required as a part of GenAI catalogue enrichment. My enhancements allowed for this functionality, significantly improving the experimentation process.",
     ],
     isc: false,
   },
   {
     title: "Summer of Bitcoin @Eye of Satoshi",
     description: [
-      "I played a pivotal role in enhancing the lightning watchtower system. Leveraging technologies such as TypeScript, ReactJS, NestJS, and Rust. I crafted an intuitive web-based graphical user interface (GUI) that significantly enhanced data visualization and analysis for over 20 tower administrators.",
+      "I played a pivotal role in enhancing the lightning watchtower system. Leveraging technologies such as <strong>TypeScript, ReactJS, NestJS, and Rust</strong>. I crafted an intuitive web-based graphical user interface (GUI) that significantly enhanced data visualization and analysis for over <strong>20 tower administrators</strong>.",
       "I fortified the error-handling mechanisms in teos-cli, providing clearer error identification and messages.",
-      "One of my significant accomplishments was the inception of a scalable and maintainable project from the ground up, which now serves as a solid foundation for contributions for a thriving community of 55+ Eye of Satoshi enthusiasts.",
+      "One of my significant accomplishments was the inception of a scalable and maintainable project from the ground up, which now serves as a solid foundation for contributions for a thriving community of <strong>55+ Eye of Satoshi enthusiasts</strong>.",
     ],
     role: "Software Developer Intern (May 2023 - Aug 2023)",
     certificate:
@@ -95,9 +94,9 @@ export const ExperienceList = [
   {
     title: "ProbeAI",
     description: [
-      "At Probe AI, a copilot for data analysts that generates queries from text based on specific databases, I spearheaded efforts to bolster the platform's functionality. I harnessed the power of NestJS, ReactJS, AWS, and Metabase to develop ingenious back-end solutions for query auto-fix and dry run query features, resulting in an impressive surge in query accuracy from 85% to 94%.",
-      "I empowered Probe AI users by seamlessly integrating support for four distinct types of databases, including MySQL, PostgreSQL, BigQuery, and Snowflake, to be used simultaneously on the platform.",
-      "Collaborating with a talented team of developers, I contributed to the creation of a Probe AI Chrome extension for the Metabase platform, which rapidly garnered over 50 downloads within just one week of its release.",
+      "At Probe AI, a copilot for data analysts that generates queries from text based on specific databases, I spearheaded efforts to bolster the platform's functionality. I harnessed the power of <strong>NestJS, ReactJS, AWS, and Metabase</strong> to develop ingenious back-end solutions for query auto-fix and dry run query features, resulting in an impressive surge in query accuracy from <strong>85% to 94%</strong>.",
+      "I empowered Probe AI users by seamlessly integrating support for <strong>four distinct types of databases</strong>, including MySQL, PostgreSQL, BigQuery, and Snowflake, to be used simultaneously on the platform.",
+      "Collaborating with a talented team of developers, I contributed to the creation of a Probe AI Chrome extension for the Metabase platform, which rapidly garnered over <strong>50 downloads</strong> within just one week of its release.",
     ],
     role: "Software Developer Intern (Apr 2023 - May 2023)",
     isc: false,
@@ -105,8 +104,8 @@ export const ExperienceList = [
   {
     title: "Fyntune Solutions Pvt. Ltd.",
     description: [
-      "My tenure as a ReactJs Developer Intern at Fyntune Solutions Private Ltd was marked by transformative contributions to more than 10 digital insurance products.",
-      "Employing ReactJS, Redux, and impeccable API integration, I successfully led the launch of six projects and implemented a comprehensive front-end overhaul. This strategic restructuring led to a remarkable 36% reduction in load times and a 20% decrease in API calls through the implementation of client-side caching mechanisms. These optimizations significantly improved the user experience while simultaneously enhancing the overall efficiency and performance of the digital insurance products.",
+      "My tenure as a ReactJs Developer Intern at Fyntune Solutions Private Ltd was marked by transformative contributions to more than <strong>10 digital insurance products</strong>.",
+      "Employing <strong>ReactJS, Redux</strong>, and impeccable API integration, I successfully led the launch of <strong>six projects</strong> and implemented a comprehensive front-end overhaul. This strategic restructuring led to a remarkable <strong>36% reduction in load times</strong> and a <strong>20% decrease in API calls</strong> through the implementation of client-side caching mechanisms. These optimizations significantly improved the user experience while simultaneously enhancing the overall efficiency and performance of the digital insurance products.",
     ],
     role: "ReactJs Developer Intern (Jun 2022 - Nov 2022)",
     certificate:
@@ -118,8 +117,7 @@ export const ExperienceList = [
 export const BlogList = [
   {
     title: "What is Redis and how does it work Internally",
-    description:
-      "Deep dive into the redis and its internal working.",
+    description: "Deep dive into the redis and its internal working.",
     date: "March 2024",
     url: "https://medium.com/@ayushsaxena823/what-is-redis-and-how-does-it-work-cfe2853eb9a9",
     tags: ["Redis", "Architecture"],

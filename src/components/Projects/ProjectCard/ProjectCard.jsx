@@ -21,7 +21,7 @@ function ProjectCard() {
             <h4>{list.title}</h4>
             <p>{list.description}</p>
             <Stack>
-              <span className="stackTitle">Tech Stack -</span>
+              <span className="stackTitle">Tech Stack</span>
               <span className="tags">{list.tech_stack}</span>
             </Stack>
             <BtnGroup>
