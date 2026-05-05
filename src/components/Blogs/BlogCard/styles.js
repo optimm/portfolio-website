@@ -4,9 +4,15 @@ export const BlogCardContainer = styled.div`
   margin-bottom: 4rem;
   padding-bottom: 2rem;
   border-bottom: 0.1px solid rgba(255, 255, 255, 0.1);
-  background: #151418;
+  background: #111118;
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: #1a1a22;
+    transform: translateY(-2px);
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -67,14 +73,15 @@ export const TagContainer = styled.div`
 `;
 
 export const Tag = styled.span`
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(57, 134, 250, 0.15);
   color: #ffffff;
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.8rem;
-  transition: all 0.3s ease;
+  font-weight: 500;
+  transition: all 0.2s ease;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(57, 134, 250, 0.3);
   }
 `;

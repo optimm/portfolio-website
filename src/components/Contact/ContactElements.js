@@ -1,16 +1,21 @@
 import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
-  background: #151418;
+  background: #111118;
   margin-top: -10px;
 
   .footer {
     text-align: center;
     padding-top : 3rem;
     padding-bottom:2rem;
-    color: #fff;
+    color: rgb(150, 150, 150);
+    font-size: 14px;
     a {
       text-decoration: underline;
+      transition: color 0.2s ease;
+      &:hover {
+        color: rgb(57, 134, 250);
+      }
     }
   }
 `;
@@ -19,6 +24,7 @@ export const Email = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding-bottom:3rem;
   span {
     font-size: 1.5rem;

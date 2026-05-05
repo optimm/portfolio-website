@@ -17,7 +17,7 @@ export const Technologies = styled.div`
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
-  allign-items: center;
+  align-items: center;
   margin-bottom: -2rem;
   @media screen and (max-width: 768px) {
     justify-content: space-evenly;
@@ -31,6 +31,16 @@ export const Tech = styled.div`
   max-width: 150px;
   min-width: 150px;
   margin-bottom: 3rem;
+  padding: 0.8rem 0.5rem;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  cursor: default;
+
+  &:hover {
+    background: rgba(57, 134, 250, 0.06);
+    transform: translateY(-3px);
+  }
+
   @media screen and (max-width: 768px) {
     max-width: 130px;
     min-width: 130px;
@@ -64,6 +74,9 @@ export const TechImg = styled.img`
 
 export const TechName = styled.div`
   font-size: 14px;
+  margin-top: 6px;
+  font-weight: 500;
+  color: #444;
   @media screen and (max-width: 400px) {
     font-size: 13px;
   }

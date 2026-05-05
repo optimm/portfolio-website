@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -18,7 +18,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #fafaff;
@@ -32,7 +32,7 @@ body {
 }
 
 main {
-  background: #151418;
+  background: #111118;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -80,12 +80,13 @@ video {
 }
 
 .btn {
-  border: 2px solid rgb(57, 134, 250);
+  border: 1.5px solid rgb(57, 134, 250);
   padding: 10px 1rem;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  font-weight: 400;
+  transition: all 0.25s ease;
+  font-weight: 500;
+  font-size: 14px;
   outline: none;
 }
 
@@ -95,8 +96,9 @@ video {
 }
 
 .PrimaryBtn:hover {
-  background: #fff;
-  color: #010606;
+  background: rgb(40, 115, 230);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(57, 134, 250, 0.25);
 }
 
 @media (max-width: 768px) {
@@ -116,6 +118,7 @@ video {
 .SecondarBtn:hover {
   background: rgb(57, 134, 250);
   color: #fff;
+  transform: translateY(-1px);
 }
 
 .btn2 {
@@ -153,7 +156,7 @@ video {
   margin-top: 1rem;
   font-size: 18px;
   color: #252525;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
 
@@ -162,6 +165,7 @@ video {
   color: #151418;
   font-weight: 700;
   margin-bottom: 3.5rem;
+  letter-spacing: -0.02em;
 }
 .SectionTitle.experience{
   color: #f6f6f6;
@@ -178,7 +182,7 @@ video {
 
 #experience {
   padding: 5rem 0;
-  background: #151418;
+  background: #111118;
   margin: 70px 0px;
 }
 
@@ -235,7 +239,7 @@ video {
     padding: 3rem 0;
     margin: 50px 0px;
   }
-  
+
   #experience {
     padding: 3rem 0;
     margin: 50px 0px;

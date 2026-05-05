@@ -34,6 +34,17 @@ export const HeroWrapper = styled.div`
   }
 `;
 
+const fadeUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 export const HeroLeft = styled.div`
   padding: 5rem 0;
   max-width: 80%;
@@ -43,20 +54,14 @@ export const HeroLeft = styled.div`
   align-items: flex-start;
   text-align: left;
   flex: 1;
-  animation: z 1s ease-in-out;
-  @keyframes z {
-    0% {
-      margin-top: -1000px;
-    }
-    100% {
-      margin-top: 0px;
-    }
-  }
+  animation: ${fadeUp} 0.8s ease-out;
+
   h1 {
     font-size: 2.6rem;
     color: #f6f6f6;
     opacity: 0.98;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 
   h5 {
@@ -67,10 +72,11 @@ export const HeroLeft = styled.div`
   }
 
   p {
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 20px;
     color: rgb(180, 180, 180);
     opacity: 0.85;
+    line-height: 1.7;
   }
 
   @media screen and (max-width: 992px) {

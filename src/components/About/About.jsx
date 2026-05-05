@@ -23,7 +23,7 @@ function About() {
           d="M 0,400 C 0,400 0,200 0,200 C 114.35714285714289,156.53571428571428 228.71428571428578,113.07142857142858 351,131 C 473.2857142857142,148.92857142857142 603.4999999999998,228.25 713,248 C 822.5000000000002,267.75 911.2857142857144,227.92857142857142 1029,210 C 1146.7142857142856,192.07142857142858 1293.3571428571427,196.03571428571428 1440,200 C 1440,200 1440,400 1440,400 Z"
           stroke="none"
           stroke-width="0"
-          fill="#151418ff"
+          fill="#111118ff"
           class="transition-all duration-300 ease-in-out delay-150"
           transform="rotate(-180 720 200)"
         ></path>
@@ -33,10 +33,11 @@ function About() {
           <div className="SectionTitle">About Me</div>
           <div className="AboutBio">
             I'm a <strong>Software Developer</strong> passionate about building{" "}
-            scalable and intelligent systems With a strong focus on system
+            scalable and intelligent systems with a strong focus on system
             design, distributed computing, and generative AI. I'm currently
-            developing <strong>LLM-powered solutions</strong> as a{" "}
-            <strong>Founding Engineer at Meesho AI Services</strong>.<br />I
+            an <strong>SDE-2 and Founding Engineer at Meesho AI Services</strong>,
+            building core platform infrastructure alongside{" "}
+            <strong>LLM-powered solutions at scale</strong>.<br />I
             played a key role as a core developer in building{" "}
             <strong>India's first GenAI-powered voicebot at scale</strong>.
             <br />

@@ -4,7 +4,9 @@ import styled from "styled-components";
 import { Link as ScrollLink } from "react-scroll";
 
 const SiderBar = styled.div`
-  background: #151418;
+  background: rgba(17, 17, 24, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -27,6 +29,10 @@ const CloseIcon = styled(FaTimes)`
   right: 2rem;
   top: 2rem;
   cursor: pointer;
+  transition: color 0.2s ease;
+  &:hover {
+    color: rgb(57, 134, 250);
+  }
 `;
 export const NavMenu = styled.div`
   display: flex;
@@ -43,9 +49,10 @@ export const NavLink = styled(ScrollLink)`
   color: #fff;
   cursor: pointer;
   font-size: 1.7rem;
+  transition: color 0.2s ease;
 
   &:hover {
-    color: rgb(119, 119, 121);
+    color: rgb(57, 134, 250);
   }
 `;
 

@@ -6,7 +6,16 @@ export const Card = styled.div`
   margin-bottom: 4rem;
   grid-template-columns: 1fr;
   border-bottom: 0.1px solid #151418;
+  padding: 1.5rem;
   padding-bottom: 2rem;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: rgba(57, 134, 250, 0.02);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  }
+
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
     border-bottom: 0;
@@ -21,12 +30,13 @@ export const Card = styled.div`
 
 export const CardLeft = styled.div`
   background: #151418;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 5px;
   justify-self: center;
+  overflow: hidden;
 
   img {
-    border-radius: 3px;
+    border-radius: 6px;
     height: auto;
   }
 `;
@@ -39,7 +49,7 @@ export const CardRight = styled.div`
 
   h4 {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 600;
   }
   @media (max-width: 500px) {
     h4 {
@@ -56,6 +66,7 @@ export const CardRight = styled.div`
     margin-bottom: 1rem;
     color: rgba(0, 0, 0, 0.815);
     text-align: center;
+    line-height: 1.6;
 
     @media (min-width: 992px) {
       text-align: start;
@@ -73,7 +84,7 @@ export const Stack = styled.div`
   margin-bottom: 5px;
 
   .stackTitle {
-    font-weight: 500;
+    font-weight: 600;
     margin-right: 10px;
     font-size: 17px;
   }
@@ -81,6 +92,7 @@ export const Stack = styled.div`
   .tags {
     font-size: 15px;
     font-weight: 400;
+    color: #555;
   }
   @media (max-width: 500px) {
     .stackTitle {

@@ -55,12 +55,22 @@ export const ProjectList = [
 export const ExperienceList = [
   {
     title: "Meesho",
-    role: "Software Developer 1 (July 2024 - Present)",
+    role: "Software Development Engineer 2 (Dec 2024 - Present)",
     description: [
-      "As a <strong>Founding Engineer at Meesho AI Services</strong>, I contribute to the development of scalable and innovative <strong>Generative AI solutions</strong>.",
-      "I developed an <strong>LLM-based customer support voice bot</strong> as a core developer (<strong>India's first Gen AI Voicebot at scale</strong>), reducing the <strong>cost per call by 75%</strong> and decreasing <strong>average handling time by 40%</strong>.",
-      "I implemented a <strong>Multimodel and DAG-based approach</strong> for the LLM-based customer support chatbot, which handles over <strong>1 million queries per day</strong>, improving chat quality and reducing LLM costs.",
-      "I engineered generative vision model solutions for <strong>catalogue enrichment</strong>, enhancing product discovery and boosting engagement.",
+      "Founding engineer in <strong>Meesho AI Services</strong>, scaled the platform from <strong>0 to 20+ clients</strong>.",
+      "Designed an <strong>AI-powered agent assist system</strong> with real-time insights and guided customer handling, single interface for all agent actions, used by <strong>2,000+ agents</strong>, reducing average handling time by <strong>25%</strong>.",
+      "Architected a <strong>centralized configuration and experimentation platform</strong> powering A/B testing and a no-code agent builder, handling <strong>1,000+ RPS</strong> with <strong>under 1ms</strong> latency overhead.",
+      "Formulated a <strong>config-driven CRM and data platform</strong> as the integration and context layer across customer interactions, reducing new client onboarding time by <strong>80%</strong>.",
+      "Implemented an <strong>adaptive LLM routing system</strong> to dynamically select optimal regions, reducing mean latency by <strong>200ms</strong>, error rates by <strong>75%</strong>, and degradation time during incidents by <strong>90%</strong>.",
+    ],
+    isc: false,
+  },
+  {
+    title: "Meesho",
+    role: "Software Development Engineer 1 (Jul 2024 - Dec 2024)",
+    description: [
+      "Built an <strong>LLM-powered customer support voice bot</strong> handling <strong>600,000+ calls/day</strong>, reducing cost per call by <strong>75%</strong> and average handling time by <strong>40%</strong>.",
+      "Engineered a <strong>multimodel DAG-based chatbot</strong> processing over <strong>1M+ queries/day</strong>, elevating chat quality and driving down LLM costs.",
     ],
     isc: false,
     media_links: [
@@ -72,10 +82,9 @@ export const ExperienceList = [
   },
   {
     title: "Meesho",
-    role: "Software Developer Intern (Jan 2024 - June 2024)",
+    role: "Software Developer Intern (Jan 2024 - Jun 2024)",
     description: [
-      "I conceptualized and executed the migration of the complete return shipment tracking flow from a legacy PHP service to an event-based Java (Spring Boot) service, which now handles over <strong>5 million requests per day</strong>. Demonstrating rapid development, I completed the project within a tight deadline, writing over <strong>20,000 lines of code</strong> in a month.",
-      "In another project, I upgraded the experimentation infrastructure to enable <strong>simultaneous A/B experiments</strong> on catalogue images. Previously, the infrastructure did not support running multiple experiments concurrently which was required as a part of GenAI catalogue enrichment. My enhancements allowed for this functionality, significantly improving the experimentation process.",
+      "Re-engineered and migrated the complete <strong>reverse shipment tracking flow</strong> from a legacy PHP service to an event-based Java service handling over <strong>5 million requests/day</strong>.",
     ],
     isc: false,
   },
@@ -136,28 +145,36 @@ export const BlogList = [
 
 export const stackList = [
   {
+    img: "/assets/skill/go.png",
+    name: "Go",
+  },
+  {
     img: "/assets/skill/python.png",
     name: "Python",
-  },
-  {
-    img: "/assets/skill/flask.png",
-    name: "Flask",
-  },
-  {
-    img: "/assets/skill/ai.png",
-    name: "Generative AI/ LLM",
-  },
-  {
-    img: "/assets/skill/fastapi.png",
-    name: "FastAPI",
   },
   {
     img: "/assets/skill/java.png",
     name: "Java",
   },
   {
+    img: "/assets/skill/ai.png",
+    name: "Generative AI/ LLM",
+  },
+  {
+    img: "/assets/skill/grpc.png",
+    name: "gRPC",
+  },
+  {
     img: "/assets/skill/spring.png",
     name: "Spring Boot",
+  },
+  {
+    img: "/assets/skill/flask.png",
+    name: "Flask",
+  },
+  {
+    img: "/assets/skill/fastapi.png",
+    name: "FastAPI",
   },
   {
     img: "/assets/skill/javascript.svg",
@@ -172,24 +189,8 @@ export const stackList = [
     name: "Node Js",
   },
   {
-    img: "/assets/skill/nestjs.svg",
-    name: "Nest Js",
-  },
-  {
     img: "/assets/skill/react.svg",
     name: "ReactJS",
-  },
-  {
-    img: "/assets/skill/nextjs.svg",
-    name: "Next Js",
-  },
-  {
-    img: "/assets/skill/c.png",
-    name: "C/C++",
-  },
-  {
-    img: "/assets/skill/mysql.png",
-    name: "MySQL",
   },
   {
     img: "/assets/skill/mongo.png",
@@ -200,31 +201,23 @@ export const stackList = [
     name: "Postgre SQL",
   },
   {
-    img: "/assets/skill/elastic.png",
-    name: "Elastic Search",
-  },
-  {
     img: "/assets/skill/redis.png",
     name: "Redis",
+  },
+  {
+    img: "/assets/skill/elastic.png",
+    name: "Elastic Search",
   },
   {
     img: "/assets/skill/kafka.png",
     name: "Kafka",
   },
-  {
-    img: "/assets/skill/rust.svg",
-    name: "Rust",
-  },
 ];
 
 export const toolist = [
   {
-    img: "/assets/skill/cursor.png",
-    name: "Cursor",
-  },
-  {
-    img: "/assets/skill/chat-gpt.png",
-    name: "ChatGPT",
+    img: "/assets/skill/claude.png",
+    name: "Claude",
   },
   {
     img: "/assets/skill/ubuntu.png",
