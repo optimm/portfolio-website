@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://ayushsaxenaa.netlify.app/sitemap.xml
