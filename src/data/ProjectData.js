@@ -32,11 +32,11 @@ export const heroPhrases = [
 // Short proof points under the hero call to action.
 export const heroProof = [
   {
-    label: "Featured in The Times of India",
+    label: "Work featured in The Times of India",
     url: "https://timesofindia.indiatimes.com/business/india-business/meesho-launches-voicebot-to-cut-customer-support-costs-by-one-fourth/articleshow/115706660.cms",
   },
+  { label: "Speaker at Meesho BharatConf '25" },
   { label: "Top 44 of 10,350 in Summer of Bitcoin" },
-  { label: "5★ on CodeChef" },
 ];
 
 export const expertise = [
@@ -148,14 +148,14 @@ export const ExperienceList = [
   {
     company: "Meesho",
     years: "2024 – now",
-    summary: "Intern to SDE 2 in 11 months.",
+    summary: "Intern to SDE 2 in 18 months.",
     current: true,
     roles: [
       {
         id: "sde-2",
         title: "Software Development Engineer 2",
         short: "SDE 2",
-        period: "Dec 2024 - Present",
+        period: "Jul 2025 - Present",
         stack: ["Go", "Python", "gRPC", "MongoDB", "Redis", "Kafka"],
         highlights: [
           {
@@ -208,7 +208,7 @@ export const ExperienceList = [
         id: "sde-1",
         title: "Software Development Engineer 1",
         short: "SDE 1",
-        period: "Jul 2024 - Dec 2024",
+        period: "Jul 2024 - Jul 2025",
         stack: ["Python", "LLM", "RAG", "Flask", "Java", "Spring Boot", "Kafka", "Redis"],
         highlights: [
           {
@@ -224,12 +224,20 @@ export const ExperienceList = [
             text: "DAG-orchestrated chatbot with retrieval over support knowledge, handling 1M+ queries a day and routing each one to the lowest-cost capable model.",
           },
         ],
-        press: {
-          outlet: "The Times of India",
-          headline: "Meesho launches voicebot to cut customer support costs by one-fourth",
-          about: "Coverage of the LLM voice bot I launched.",
-          url: "https://timesofindia.indiatimes.com/business/india-business/meesho-launches-voicebot-to-cut-customer-support-costs-by-one-fourth/articleshow/115706660.cms",
-        },
+        press: [
+          {
+            outlet: "The Times of India",
+            headline: "Meesho launches voicebot to cut customer support costs by one-fourth",
+            about: "Coverage of the LLM voice bot I launched.",
+            url: "https://timesofindia.indiatimes.com/business/india-business/meesho-launches-voicebot-to-cut-customer-support-costs-by-one-fourth/articleshow/115706660.cms",
+          },
+          {
+            outlet: "Inc42",
+            headline: "Meesho launches GenAI-powered voice bot for post-order queries",
+            about: "On the launch and how the bot handles support calls.",
+            url: "https://inc42.com/buzz/meesho-launches-genai-powered-voice-bot-for-post-order-queries/",
+          },
+        ],
       },
       {
         id: "intern",
@@ -244,6 +252,11 @@ export const ExperienceList = [
             label: "requests a day",
             title: "Reverse shipment tracking, rebuilt",
             text: "Migrated the end-to-end flow from a legacy PHP monolith to an event-driven Java microservice.",
+          },
+          {
+            kind: "ai",
+            title: "GenAI catalogue enrichment",
+            text: "Rebuilt the experimentation setup to run concurrent A/B tests on catalogue images, speeding up generative vision experiments for product discovery.",
           },
         ],
       },
@@ -316,13 +329,16 @@ export const ExperienceList = [
   },
 ];
 
-export const recognition = [
-  { kind: "platform", value: "Top 44", label: "Summer of Bitcoin 2023", detail: "Selected from 10,350 applicants." },
-  { kind: "ai", value: "2034", label: "5★ on CodeChef", detail: "Maximum rating." },
-  { kind: "systems", value: "1438", label: "Specialist on Codeforces", detail: "Maximum rating." },
+// Achievements section, strongest first. Kinds only pick the tile colour.
+export const achievements = [
+  { kind: "ai", value: "Speaker", label: "Meesho BharatConf '25", detail: "On scaling India's first GenAI voice bot." },
+  { kind: "platform", value: "3rd", label: "HackMee 3.0", detail: "Out of 130+ teams, with a voice bot that tests other voice bots." },
+  { kind: "systems", value: "2 awards", label: "Recognised at Meesho", detail: "Appreciation at the AI Services All-Hands 2025, and a Panchayat Award." },
+  { kind: "infra", value: "Top 44", label: "Summer of Bitcoin 2023", detail: "Selected from 10,350 applicants." },
+  { kind: "accent", value: "2034", label: "5★ on CodeChef", detail: "Maximum rating." },
+  { kind: "frontend", value: "1438", label: "Specialist on Codeforces", detail: "Maximum rating." },
   { kind: "infra", value: "Knight", label: "LeetCode badge", detail: "700+ problems solved across platforms." },
-  { kind: "frontend", value: "1,000+", label: "Students supported", detail: "As UG Coordinator, Counselling Services at IIIT Jabalpur." },
-  { kind: "accent", value: "8.7", label: "CPI, B.Tech in CSE", detail: "IIIT Jabalpur, 2020 to 2024." },
+  { kind: "ai", value: "1,000+", label: "Students supported", detail: "As UG Coordinator, Counselling Services at IIIT Jabalpur." },
 ];
 
 export const BlogList = [
