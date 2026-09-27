@@ -1,14 +1,10 @@
-import React from "react";
-import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import React, { useEffect } from "react";
 import Home from "./pages/Home";
+import { initReveal } from "./reveal";
 
 function App() {
-  return (
-    <Router>
-      <Home />
-    </Router>
-  );
+  useEffect(() => initReveal(), []);
+  return <Home />;
 }
 
 export default App;

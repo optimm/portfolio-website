@@ -1,262 +1,346 @@
-// --------------------------------------- Project List
+// Not linked on the site for now; kept so it is easy to bring back.
+export const resumeUrl =
+  "https://drive.google.com/file/d/1-sp5w34U0J1q715w7g0Nytt7hEl1gxd0/view?usp=sharing";
+
+export const email = "ayushsaxena823@gmail.com";
+
+export const socials = [
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/ayush-saxena-b5b099203/" },
+  { label: "GitHub", url: "https://github.com/optimm" },
+  { label: "X", url: "https://x.com/AyushSaxena823" },
+  { label: "Instagram", url: "https://www.instagram.com/ayushsaxenaa__/" },
+];
+
+// One colour per kind of work, used the same way in the hero map, Work and Skills.
+export const categories = {
+  ai: { label: "AI and LLMs", short: "AI", color: "var(--c-ai)" },
+  systems: { label: "Backend and distributed systems", short: "Systems", color: "var(--c-systems)" },
+  platform: { label: "Platform and architecture", short: "Platform", color: "var(--c-platform)" },
+  infra: { label: "Data and infra", short: "Infra", color: "var(--c-infra)" },
+  frontend: { label: "Product and frontend", short: "Product", color: "var(--c-frontend)" },
+};
+
+export const heroPhrases = [
+  // U+2011 non-breaking hyphens keep hyphenated words like "low-latency" on one line.
+  "high‑scale, low‑latency systems.",
+  "multi‑tenant AI platforms.",
+  "distributed systems.",
+  "products thousands rely on every day.",
+  "AI that cuts costs, not corners.",
+];
+
+// Short proof points under the hero call to action.
+export const heroProof = [
+  {
+    label: "Featured in The Times of India",
+    url: "https://timesofindia.indiatimes.com/business/india-business/meesho-launches-voicebot-to-cut-customer-support-costs-by-one-fourth/articleshow/115706660.cms",
+  },
+  { label: "Top 44 of 10,350 in Summer of Bitcoin" },
+  { label: "5★ on CodeChef" },
+];
+
+export const expertise = [
+  {
+    kind: "systems",
+    title: "Distributed systems",
+    text: "High-throughput, low-latency services that stay up under load, with event-driven design, caching and graceful fallbacks.",
+    keywords: "Microservices, gRPC, Kafka, Redis, observability",
+  },
+  {
+    kind: "ai",
+    title: "AI and LLM systems",
+    text: "LLM products running in production: retrieval, agents and DAG orchestration, model routing with fallbacks, evaluation, and real-time voice with ASR and TTS.",
+    keywords: "LLMs, RAG, agents, routing, evals, voice",
+  },
+  {
+    kind: "platform",
+    title: "Platform and architecture",
+    text: "Multi-tenant platforms, config and experimentation systems and rule engines that other teams build on.",
+    keywords: "System design, multi-tenancy, A/B testing",
+  },
+  {
+    kind: "frontend",
+    title: "Product and frontend",
+    text: "Dashboards and internal tools built with the people who use them every day, not just for them.",
+    keywords: "React, TypeScript, NestJS",
+  },
+];
+
+// Icons are SVGs in public/icons: brand marks from simple-icons (CC0) with the
+// brand colour used on hover, plus a few drawn glyphs for concepts. Entries
+// without an icon show a text mark. `kinds` link each tool to the focus areas.
+export const tools = [
+  { name: "LLMs", icon: "llm", kinds: ["ai"] },
+  { name: "RAG", icon: "rag", kinds: ["ai"] },
+  { name: "AI agents", icon: "agents", kinds: ["ai", "platform"] },
+  { name: "Speech to text", icon: "asr", kinds: ["ai"] },
+  { name: "Text to speech", icon: "tts", kinds: ["ai"] },
+  { name: "Claude", icon: "claude", hex: "D97757", kinds: ["ai"] },
+  { name: "Go", icon: "go", hex: "00ADD8", kinds: ["systems", "platform"] },
+  { name: "Python", icon: "python", hex: "3776AB", kinds: ["systems", "ai", "platform"] },
+  { name: "Java", icon: "openjdk", hex: "000000", kinds: ["systems"] },
+  { name: "gRPC", mark: "gRPC", kinds: ["systems", "platform"] },
+  { name: "Gin", icon: "gin", hex: "008ECF", kinds: ["systems"] },
+  { name: "Spring Boot", icon: "springboot", hex: "6DB33F", kinds: ["systems"] },
+  { name: "FastAPI", icon: "fastapi", hex: "009688", kinds: ["systems", "ai"] },
+  { name: "Flask", icon: "flask", hex: "3BABC3", kinds: ["systems", "ai"] },
+  { name: "Kafka", icon: "apachekafka", hex: "231F20", kinds: ["systems", "infra", "platform"] },
+  { name: "Redis", icon: "redis", hex: "FF4438", kinds: ["infra", "systems", "platform"] },
+  { name: "MongoDB", icon: "mongodb", hex: "47A248", kinds: ["infra", "platform"] },
+  { name: "PostgreSQL", icon: "postgresql", hex: "4169E1", kinds: ["infra"] },
+  { name: "Elasticsearch", icon: "elasticsearch", hex: "005571", kinds: ["infra"] },
+  { name: "Docker", icon: "docker", hex: "2496ED", kinds: ["infra", "platform"] },
+  { name: "AWS", mark: "AWS", kinds: ["infra", "platform"] },
+  { name: "Jenkins", icon: "jenkins", hex: "D24939", kinds: ["infra"] },
+  { name: "ArgoCD", icon: "argo", hex: "EF7B4D", kinds: ["infra", "platform"] },
+  { name: "Grafana", icon: "grafana", hex: "F46800", kinds: ["infra", "platform"] },
+  { name: "Git", icon: "git", hex: "F03C2E", kinds: ["infra", "frontend"] },
+  { name: "TypeScript", icon: "typescript", hex: "3178C6", kinds: ["frontend"] },
+  { name: "JavaScript", icon: "javascript", hex: "F7DF1E", kinds: ["frontend"] },
+  { name: "React", icon: "react", hex: "61DAFB", kinds: ["frontend"] },
+  { name: "Node.js", icon: "nodedotjs", hex: "5FA04E", kinds: ["frontend", "systems"] },
+];
+
 export const ProjectList = [
   {
-    img: "/assets/project_0.png",
-    title: "Devhub",
-    description:
-      "Devhub is the ultimate social platform designed exclusively for developers. Join Devhub today to showcase your skills and connect.",
-    tech_stack: "React js, Redux, Node js, Express js, MongoDb",
+    title: "DevHub",
+    description: "A social platform for developers to showcase projects and connect with each other.",
+    tech_stack: "React, Redux, Node.js, Express, MongoDB",
     github_url: "https://github.com/optimm/DevHub",
     demo_url: "https://devhubb.netlify.app/",
-    demo: true,
+    demo_label: "Live site",
   },
   {
-    img: "/assets/project_3.png",
     title: "AlgoX",
-    description:
-      "Algox is a sorting visualization platform with clear and custom visualizations",
-    tech_stack: "Reactjs, Css",
+    description: "A sorting algorithm visualizer with custom inputs, speed and array-size controls.",
+    tech_stack: "React, CSS",
     github_url: "https://github.com/optimm/AlgoX",
     demo_url: "https://algox.netlify.app/",
-    demo: true,
+    demo_label: "Live site",
   },
   {
-    img: "/assets/project_1.png",
     title: "Shoppy",
-    description:
-      "Shoppy is fullstack shopping website cum clothing store management system with advanced features",
-    tech_stack: "React js, Node js, Express js, Mysql",
+    description: "A full-stack shopping website and clothing store management system.",
+    tech_stack: "React, Node.js, Express, MySQL",
     github_url: "https://github.com/optimm/shoppy",
     demo_url: "https://www.youtube.com/watch?v=CTgu2v0mg30&feature=youtu.be",
-    demo: true,
+    demo_label: "Watch demo",
   },
   {
-    img: "/assets/project_6.png",
     title: "Findit",
-    description:
-      "Findit is a web app for recommending and exploring nearby stores and facilities according to user's needs.",
-    tech_stack: "ReactJs, Redux",
+    description: "A web app for finding nearby stores and facilities based on what you need.",
+    tech_stack: "React, Redux",
     github_url: "https://github.com/optimm/store-app",
     demo_url: "https://findittt.netlify.app/",
-    demo: true,
+    demo_label: "Live site",
   },
   {
-    img: "/assets/newsit.png",
     title: "NewsIt",
-    description:
-      "NewsIt is a cross platform mobile application for news and articles",
-    tech_stack: "React native, Context API",
+    description: "A cross-platform mobile app for news and articles.",
+    tech_stack: "React Native, Context API",
     github_url: "https://github.com/optimm/Newsit",
     demo_url: "https://github.com/optimm/Newsit/blob/master/NewsIt.apk",
-    demo: true,
+    demo_label: "Download APK",
   },
 ];
 
 export const ExperienceList = [
   {
-    title: "Meesho",
-    role: "Software Development Engineer 2 (Dec 2024 - Present)",
-    description: [
-      "Founding engineer in <strong>Meesho AI Services</strong>, scaled the platform from <strong>0 to 20+ clients</strong>.",
-      "Designed an <strong>AI-powered agent assist system</strong> with real-time insights and guided customer handling, single interface for all agent actions, used by <strong>2,000+ agents</strong>, reducing average handling time by <strong>25%</strong>.",
-      "Architected a <strong>centralized configuration and experimentation platform</strong> powering A/B testing and a no-code agent builder, handling <strong>1,000+ RPS</strong> with <strong>under 1ms</strong> latency overhead.",
-      "Formulated a <strong>config-driven CRM and data platform</strong> as the integration and context layer across customer interactions, reducing new client onboarding time by <strong>80%</strong>.",
-      "Implemented an <strong>adaptive LLM routing system</strong> to dynamically select optimal regions, reducing mean latency by <strong>200ms</strong>, error rates by <strong>75%</strong>, and degradation time during incidents by <strong>90%</strong>.",
-    ],
-    isc: false,
-  },
-  {
-    title: "Meesho",
-    role: "Software Development Engineer 1 (Jul 2024 - Dec 2024)",
-    description: [
-      "Built an <strong>LLM-powered customer support voice bot</strong> handling <strong>600,000+ calls/day</strong>, reducing cost per call by <strong>75%</strong> and average handling time by <strong>40%</strong>.",
-      "Engineered a <strong>multimodel DAG-based chatbot</strong> processing over <strong>1M+ queries/day</strong>, elevating chat quality and driving down LLM costs.",
-    ],
-    isc: false,
-    media_links: [
+    company: "Meesho",
+    years: "2024 – now",
+    summary: "Intern to SDE 2 in 11 months.",
+    current: true,
+    roles: [
       {
-        label: "News Feature",
-        url: "https://timesofindia.indiatimes.com/business/india-business/meesho-launches-voicebot-to-cut-customer-support-costs-by-one-fourth/articleshow/115706660.cms",
+        id: "sde-2",
+        title: "Software Development Engineer 2",
+        short: "SDE 2",
+        period: "Dec 2024 - Present",
+        stack: ["Go", "Python", "gRPC", "MongoDB", "Redis", "Kafka"],
+        highlights: [
+          {
+            kind: "platform",
+            featured: true,
+            value: "0 → 30+",
+            label: "enterprise clients",
+            title: "Founding engineer, Meesho AI Services",
+            text: "Architected the core multi-tenant AI platform behind voice, chat, agent assist and campaign management. It now handles 2.5M+ interactions a day and made AI Services a new business line for Meesho.",
+          },
+          {
+            kind: "ai",
+            value: "−35%",
+            label: "average call handling time",
+            title: "Agent-assist platform",
+            text: "Real-time insights and guided actions for 2,000+ concurrent support agents, all in one interface, which also brought agent costs down.",
+          },
+          {
+            kind: "platform",
+            title: "No-code agent builder",
+            text: "DAG-based orchestration on a config-driven CRM and data platform. 50+ product and business people launch agents themselves, with far less dependence on engineering, and new clients onboard much faster.",
+          },
+          {
+            kind: "systems",
+            value: "<1ms",
+            label: "overhead at 1,000+ RPS",
+            title: "Config, experiments and rules engine",
+            text: "One platform for configuration, live A/B experiments and business-logic changes across 10+ services.",
+          },
+          {
+            kind: "systems",
+            value: "−75%",
+            label: "LLM error rate",
+            title: "Adaptive LLM routing",
+            text: "Region selection and cross-model fallbacks that cut mean latency by 200ms and let the platform recover from provider incidents 90% faster.",
+          },
+          {
+            kind: "ai",
+            title: "Lower voice bot cost per call",
+            text: "Reduced through a model experimentation platform and cross-model fallbacks, enabling faster evaluation and onboarding of new LLM, TTS and ASR models.",
+          },
+          {
+            kind: "platform",
+            title: "Leading the Execution Excellence pod",
+            text: "Automating tenant onboarding, testing and RCA feedback loops, halving go-live timelines and multiplying the pilots each person can deliver.",
+          },
+        ],
+      },
+      {
+        id: "sde-1",
+        title: "Software Development Engineer 1",
+        short: "SDE 1",
+        period: "Jul 2024 - Dec 2024",
+        stack: ["Python", "LLM", "RAG", "Flask", "Java", "Spring Boot", "Kafka", "Redis"],
+        highlights: [
+          {
+            kind: "ai",
+            value: "1M+",
+            label: "calls a day",
+            title: "India's first LLM voice bot at scale",
+            text: "Customer support voice bot on a real-time ASR, LLM and TTS pipeline. Cost per call down 75%, handling time down 40%.",
+          },
+          {
+            kind: "ai",
+            title: "Multi-model RAG chatbot",
+            text: "DAG-orchestrated chatbot with retrieval over support knowledge, handling 1M+ queries a day and routing each one to the lowest-cost capable model.",
+          },
+        ],
+        press: {
+          outlet: "The Times of India",
+          headline: "Meesho launches voicebot to cut customer support costs by one-fourth",
+          about: "Coverage of the LLM voice bot I launched.",
+          url: "https://timesofindia.indiatimes.com/business/india-business/meesho-launches-voicebot-to-cut-customer-support-costs-by-one-fourth/articleshow/115706660.cms",
+        },
+      },
+      {
+        id: "intern",
+        title: "Software Developer Intern",
+        short: "Intern",
+        period: "Jan 2024 - Jul 2024",
+        stack: ["Java", "Spring Boot", "Kafka", "Redis", "Elasticsearch"],
+        highlights: [
+          {
+            kind: "infra",
+            value: "5M+",
+            label: "requests a day",
+            title: "Reverse shipment tracking, rebuilt",
+            text: "Migrated the end-to-end flow from a legacy PHP monolith to an event-driven Java microservice.",
+          },
+        ],
       },
     ],
   },
   {
-    title: "Meesho",
-    role: "Software Developer Intern (Jan 2024 - Jun 2024)",
-    description: [
-      "Re-engineered and migrated the complete <strong>reverse shipment tracking flow</strong> from a legacy PHP service to an event-based Java service handling over <strong>5 million requests/day</strong>.",
-    ],
-    isc: false,
-  },
-  {
-    title: "Summer of Bitcoin @Eye of Satoshi",
-    description: [
-      "I played a pivotal role in enhancing the lightning watchtower system. Leveraging technologies such as <strong>TypeScript, ReactJS, NestJS, and Rust</strong>. I crafted an intuitive web-based graphical user interface (GUI) that significantly enhanced data visualization and analysis for over <strong>20 tower administrators</strong>.",
-      "I fortified the error-handling mechanisms in teos-cli, providing clearer error identification and messages.",
-      "One of my significant accomplishments was the inception of a scalable and maintainable project from the ground up, which now serves as a solid foundation for contributions for a thriving community of <strong>55+ Eye of Satoshi enthusiasts</strong>.",
-    ],
-    role: "Software Developer Intern (May 2023 - Aug 2023)",
+    company: "Summer of Bitcoin, Eye of Satoshi",
+    years: "2023",
     certificate:
       "https://drive.google.com/file/d/1yAZErlQMqWm-TkBjrWShaDGPJ4i3U-Ab/view?usp=sharing",
-    isc: true,
+    roles: [
+      {
+        id: "sob",
+        title: "Software Developer Intern",
+        period: "May 2023 - Aug 2023",
+        stack: ["TypeScript", "React", "NestJS", "Rust", "gRPC", "Docker"],
+        highlights: [
+          {
+            kind: "frontend",
+            value: "100+",
+            label: "operators",
+            title: "Open-source watchtower dashboard",
+            text: "Operator dashboard for Eye of Satoshi, a Bitcoin Lightning watchtower, with real-time user, appointment and breach tracking. Also improved error handling in teos-cli.",
+          },
+        ],
+      },
+    ],
   },
   {
-    title: "ProbeAI",
-    description: [
-      "At Probe AI, a copilot for data analysts that generates queries from text based on specific databases, I spearheaded efforts to bolster the platform's functionality. I harnessed the power of <strong>NestJS, ReactJS, AWS, and Metabase</strong> to develop ingenious back-end solutions for query auto-fix and dry run query features, resulting in an impressive surge in query accuracy from <strong>85% to 94%</strong>.",
-      "I empowered Probe AI users by seamlessly integrating support for <strong>four distinct types of databases</strong>, including MySQL, PostgreSQL, BigQuery, and Snowflake, to be used simultaneously on the platform.",
-      "Collaborating with a talented team of developers, I contributed to the creation of a Probe AI Chrome extension for the Metabase platform, which rapidly garnered over <strong>50 downloads</strong> within just one week of its release.",
+    company: "Probe AI",
+    years: "2023",
+    roles: [
+      {
+        id: "probe",
+        title: "Software Developer Intern",
+        period: "Apr 2023 - May 2023",
+        stack: ["NestJS", "React", "LLM", "AWS", "Metabase"],
+        highlights: [
+          {
+            kind: "ai",
+            value: "85 → 94%",
+            label: "SQL query accuracy",
+            title: "Auto-fix for LLM-generated SQL",
+            text: "Query auto-fix and dry runs for a database-aware text-to-SQL tool, plus support for MySQL, PostgreSQL, BigQuery and Snowflake side by side.",
+          },
+        ],
+      },
     ],
-    role: "Software Developer Intern (Apr 2023 - May 2023)",
-    isc: false,
   },
   {
-    title: "Fyntune Solutions Pvt. Ltd.",
-    description: [
-      "My tenure as a ReactJs Developer Intern at Fyntune Solutions Private Ltd was marked by transformative contributions to more than <strong>10 digital insurance products</strong>.",
-      "Employing <strong>ReactJS, Redux</strong>, and impeccable API integration, I successfully led the launch of <strong>six projects</strong> and implemented a comprehensive front-end overhaul. This strategic restructuring led to a remarkable <strong>36% reduction in load times</strong> and a <strong>20% decrease in API calls</strong> through the implementation of client-side caching mechanisms. These optimizations significantly improved the user experience while simultaneously enhancing the overall efficiency and performance of the digital insurance products.",
-    ],
-    role: "ReactJs Developer Intern (Jun 2022 - Nov 2022)",
+    company: "Fyntune Solutions",
+    years: "2022",
     certificate:
       "https://drive.google.com/file/d/1nrqwePMKE9kkETIBW1JKFjjUIW4DZFQx/view?usp=sharing",
-    isc: true,
+    roles: [
+      {
+        id: "fyntune",
+        title: "ReactJs Developer Intern",
+        period: "Jun 2022 - Nov 2022",
+        stack: ["React", "Redux"],
+        highlights: [
+          {
+            kind: "frontend",
+            title: "Insurance product front ends",
+            text: "Worked across 10+ digital insurance products and led six launches, with a front-end rework and client-side caching that made pages load faster.",
+          },
+        ],
+      },
+    ],
   },
+];
+
+export const recognition = [
+  { kind: "platform", value: "Top 44", label: "Summer of Bitcoin 2023", detail: "Selected from 10,350 applicants." },
+  { kind: "ai", value: "2034", label: "5★ on CodeChef", detail: "Maximum rating." },
+  { kind: "systems", value: "1438", label: "Specialist on Codeforces", detail: "Maximum rating." },
+  { kind: "infra", value: "Knight", label: "LeetCode badge", detail: "700+ problems solved across platforms." },
+  { kind: "frontend", value: "1,000+", label: "Students supported", detail: "As UG Coordinator, Counselling Services at IIIT Jabalpur." },
+  { kind: "accent", value: "8.7", label: "CPI, B.Tech in CSE", detail: "IIIT Jabalpur, 2020 to 2024." },
 ];
 
 export const BlogList = [
   {
-    title: "What is Redis and how does it work Internally",
-    description: "Deep dive into the redis and its internal working.",
+    title: "What is Redis and how does it work internally",
+    description: "A deep dive into Redis and how it works under the hood.",
     date: "March 2024",
     url: "https://medium.com/@ayushsaxena823/what-is-redis-and-how-does-it-work-cfe2853eb9a9",
     tags: ["Redis", "Architecture"],
+    kind: "systems",
   },
   {
     title: "My Summer of Bitcoin Story",
     description:
-      "My complete journey of Summer of bitcoin 2023 at Eye of Satoshi",
+      "My Summer of Bitcoin 2023 journey with Eye of Satoshi.",
     date: "August 2024",
     url: "https://medium.com/@ayushsaxena823/my-summer-of-bitcoin-story-4f576b03ad03",
-    tags: ["Summer of Bitcoin", "Eye of Satoshi"],
-  },
-];
-
-// --------------------------------------- Skills
-
-export const stackList = [
-  {
-    img: "/assets/skill/go.png",
-    name: "Go",
-  },
-  {
-    img: "/assets/skill/python.png",
-    name: "Python",
-  },
-  {
-    img: "/assets/skill/java.png",
-    name: "Java",
-  },
-  {
-    img: "/assets/skill/ai.png",
-    name: "Generative AI/ LLM",
-  },
-  {
-    img: "/assets/skill/grpc.png",
-    name: "gRPC",
-  },
-  {
-    img: "/assets/skill/spring.png",
-    name: "Spring Boot",
-  },
-  {
-    img: "/assets/skill/flask.png",
-    name: "Flask",
-  },
-  {
-    img: "/assets/skill/fastapi.png",
-    name: "FastAPI",
-  },
-  {
-    img: "/assets/skill/javascript.svg",
-    name: "JavaScript",
-  },
-  {
-    img: "/assets/skill/typescript.png",
-    name: "TypeScript",
-  },
-  {
-    img: "/assets/skill/nodejs.png",
-    name: "Node Js",
-  },
-  {
-    img: "/assets/skill/react.svg",
-    name: "ReactJS",
-  },
-  {
-    img: "/assets/skill/mongo.png",
-    name: "MongoDB",
-  },
-  {
-    img: "/assets/skill/postgre.png",
-    name: "Postgre SQL",
-  },
-  {
-    img: "/assets/skill/redis.png",
-    name: "Redis",
-  },
-  {
-    img: "/assets/skill/elastic.png",
-    name: "Elastic Search",
-  },
-  {
-    img: "/assets/skill/kafka.png",
-    name: "Kafka",
-  },
-];
-
-export const toolist = [
-  {
-    img: "/assets/skill/claude.png",
-    name: "Claude",
-  },
-  {
-    img: "/assets/skill/ubuntu.png",
-    name: "Ubuntu",
-  },
-  {
-    img: "/assets/skill/vs.png",
-    name: "Vs code",
-  },
-  {
-    img: "/assets/skill/intellij.png",
-    name: "IntelliJ",
-  },
-  {
-    img: "/assets/skill/docker.png",
-    name: "Docker",
-  },
-  {
-    img: "/assets/skill/grafana.png",
-    name: "Grafana",
-  },
-  {
-    img: "/assets/skill/jenkins.png",
-    name: "Jenkins",
-  },
-  {
-    img: "/assets/skill/postman.png",
-    name: "Postman",
-  },
-  {
-    img: "/assets/skill/argocd.png",
-    name: "ArgoCD",
-  },
-  {
-    img: "/assets/skill/azure.png",
-    name: "Azure",
-  },
-  {
-    img: "/assets/skill/aws.png",
-    name: "Aws",
+    tags: ["Summer of Bitcoin", "Open source"],
+    kind: "platform",
   },
 ];
