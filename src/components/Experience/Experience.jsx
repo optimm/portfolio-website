@@ -333,12 +333,23 @@ const Role = styled.section`
 `;
 
 // Press coverage, set apart from the dark tiles so it reads as a clipping.
-const Press = styled.a`
+// Press coverage, set like newsprint so it reads as outside validation.
+const PressList = styled.ul`
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 8px 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
   margin-top: 12px;
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const Press = styled.a`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
   padding: 20px 24px;
   border-radius: 12px;
   background: #f4f1ea;
@@ -354,7 +365,6 @@ const Press = styled.a`
     font-family: Georgia, "Times New Roman", serif;
     font-size: 19px;
     font-weight: 700;
-    white-space: nowrap;
   }
 
   .headline {
@@ -364,23 +374,20 @@ const Press = styled.a`
   }
 
   .about {
-    display: block;
-    margin-top: 4px;
-    font-family: var(--font-sans);
     font-size: 14px;
     color: #57536a;
   }
 
   .read {
+    margin-top: auto;
+    padding-top: 6px;
     font-size: 15px;
     font-weight: 600;
-    white-space: nowrap;
     text-decoration: underline;
     text-underline-offset: 4px;
   }
 
   @media (max-width: 760px) {
-    grid-template-columns: 1fr;
     padding: 18px 20px;
   }
 `;
@@ -607,14 +614,18 @@ function Experience() {
                       ))}
                     </Highlights>
                     {role.press && (
-                      <Press href={role.press.url} target="_blank" rel="noopener noreferrer" data-reveal>
-                        <span className="outlet">{role.press.outlet}</span>
-                        <span className="headline">
-                          “{role.press.headline}”
-                          <span className="about">{role.press.about}</span>
-                        </span>
-                        <span className="read">Read the story</span>
-                      </Press>
+                      <PressList aria-label="Press coverage">
+                        {role.press.map((story, i) => (
+                          <li key={story.url} data-reveal style={{ "--i": i }}>
+                            <Press href={story.url} target="_blank" rel="noopener noreferrer">
+                              <span className="outlet">{story.outlet}</span>
+                              <span className="headline">“{story.headline}”</span>
+                              <span className="about">{story.about}</span>
+                              <span className="read">Read the story</span>
+                            </Press>
+                          </li>
+                        ))}
+                      </PressList>
                     )}
                     <ul className="stack" aria-label="Built with">
                       {role.stack.map((tech) => (
