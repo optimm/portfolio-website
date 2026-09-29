@@ -85,7 +85,7 @@ function Contact() {
                   className="text-link"
                   href={social.url}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="me noopener noreferrer"
                 >
                   {social.label}
                 </a>
