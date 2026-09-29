@@ -129,7 +129,7 @@ function Blogs() {
           <h2 id="blogs-title" className="section-title" data-reveal>
             Writing
           </h2>
-          <a className="text-link" href={MEDIUM_PROFILE} target="_blank" rel="noopener noreferrer">
+          <a className="text-link" href={MEDIUM_PROFILE} target="_blank" rel="me noopener noreferrer">
             All posts on Medium
           </a>
         </Head>

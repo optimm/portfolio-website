@@ -148,28 +148,28 @@ export const ExperienceList = [
   {
     company: "Meesho",
     years: "2024 – now",
-    summary: "Intern to SDE 2 in 18 months.",
+    summary: "Intern to SDE 2 in 19 months.",
     current: true,
     roles: [
       {
         id: "sde-2",
         title: "Software Development Engineer 2",
         short: "SDE 2",
-        period: "Jul 2025 - Present",
+        period: "Aug 2025 - Present",
         stack: ["Go", "Python", "gRPC", "MongoDB", "Redis", "Kafka"],
         highlights: [
           {
             kind: "platform",
             featured: true,
-            value: "0 → 30+",
+            value: "0 → 10+",
             label: "enterprise clients",
             title: "Founding engineer, Meesho AI Services",
             text: "Architected the core multi-tenant AI platform behind voice, chat, agent assist and campaign management. It now handles 2.5M+ interactions a day and made AI Services a new business line for Meesho.",
           },
           {
             kind: "ai",
-            value: "−35%",
-            label: "average call handling time",
+            value: "30%",
+            label: "lower average call handling time",
             title: "Agent-assist platform",
             text: "Real-time insights and guided actions for 2,000+ concurrent support agents, all in one interface, which also brought agent costs down.",
           },
@@ -187,8 +187,8 @@ export const ExperienceList = [
           },
           {
             kind: "systems",
-            value: "−75%",
-            label: "LLM error rate",
+            value: "75%",
+            label: "lower LLM error rate",
             title: "Adaptive LLM routing",
             text: "Region selection and cross-model fallbacks that cut mean latency by 200ms and let the platform recover from provider incidents 90% faster.",
           },
@@ -208,7 +208,7 @@ export const ExperienceList = [
         id: "sde-1",
         title: "Software Development Engineer 1",
         short: "SDE 1",
-        period: "Jul 2024 - Jul 2025",
+        period: "Jul 2024 - Aug 2025",
         stack: ["Python", "LLM", "RAG", "Flask", "Java", "Spring Boot", "Kafka", "Redis"],
         highlights: [
           {
