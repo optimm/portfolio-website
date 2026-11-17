@@ -89,6 +89,8 @@ export const tools = [
   { name: "Redis", icon: "redis", hex: "FF4438", kinds: ["infra", "systems", "platform"] },
   { name: "MongoDB", icon: "mongodb", hex: "47A248", kinds: ["infra", "platform"] },
   { name: "PostgreSQL", icon: "postgresql", hex: "4169E1", kinds: ["infra"] },
+  { name: "ClickHouse", icon: "clickhouse", hex: "FFCC01", kinds: ["infra", "systems"] },
+  { name: "ScyllaDB", icon: "scylladb", hex: "6CD5E7", kinds: ["infra", "systems"] },
   { name: "Elasticsearch", icon: "elasticsearch", hex: "005571", kinds: ["infra"] },
   { name: "Docker", icon: "docker", hex: "2496ED", kinds: ["infra", "platform"] },
   { name: "AWS", mark: "AWS", kinds: ["infra", "platform"] },
@@ -197,6 +199,11 @@ export const ExperienceList = [
             label: "overhead at 1,000+ RPS",
             title: "Config, experiments and rules engine",
             text: "One platform for configuration, live A/B experiments and business-logic changes across 10+ services.",
+          },
+          {
+            kind: "systems",
+            title: "Real-time AI observability platform",
+            text: "Turn-level tracing, self-serve testing and agentic production debugging across voice and chat, with zero added call latency and query latencies in the low hundreds of milliseconds.",
           },
           {
             kind: "systems",
