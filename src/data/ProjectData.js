@@ -27,6 +27,7 @@ export const heroPhrases = [
   "distributed systems.",
   "products thousands rely on every day.",
   "AI that cuts costs, not corners.",
+  "open‑source tools that get under the hood.",
 ];
 
 // Short proof points under the hero call to action.
@@ -102,6 +103,18 @@ export const tools = [
 ];
 
 export const ProjectList = [
+  {
+    title: "Gmeter",
+    description:
+      "An agent-friendly, open-loop load tester for HTTP and gRPC that reports honest latency and tells you when the generator itself is the problem. Runs from the CLI, inside a Go test, or as an MCP server for AI agents.",
+    tech_stack: "Go, gRPC, Docker, MCP",
+    github_url: "https://github.com/optimm/Gmeter",
+    demo_url: "https://optimm.github.io/Gmeter/",
+    demo_label: "Website",
+    blog_url:
+      "https://medium.com/@ayushsaxena823/go-concurrency-how-go-runs-100-000-goroutines-on-11-threads-42d70e2fad47",
+    blog_label: "Read the blog",
+  },
   {
     title: "DevHub",
     description: "A social platform for developers to showcase projects and connect with each other.",
@@ -342,6 +355,15 @@ export const achievements = [
 ];
 
 export const BlogList = [
+  {
+    title: "Go Concurrency: How Go Runs 100,000 Goroutines on 11 Threads",
+    description:
+      "A deep dive into Go's concurrency model, from OS threads and the scheduler to a real load tester.",
+    date: "November 2026",
+    url: "https://medium.com/@ayushsaxena823/go-concurrency-how-go-runs-100-000-goroutines-on-11-threads-42d70e2fad47",
+    tags: ["Go", "Concurrency"],
+    kind: "systems",
+  },
   {
     title: "What is Redis and how does it work internally",
     description: "A deep dive into Redis and how it works under the hood.",

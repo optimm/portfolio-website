@@ -196,7 +196,8 @@ function Hero() {
             generative AI, and I enjoy turning hard problems into simple,
             scalable systems. Right now I'm an SDE 2 and founding engineer at{" "}
             <strong>Meesho AI Services</strong>, building the core platform the
-            vertical runs on.
+            vertical runs on. Off the clock I go low-level: building open-source
+            tools and writing about what I find inside.
           </p>
           <div className="actions">
             <a className="button" href="#experience">

@@ -113,7 +113,7 @@ function About() {
             </div>
             <div>
               <dt>Exploring</dt>
-              <dd>Deep learning, generative AI and system design</dd>
+              <dd>Low-level systems, concurrency and performance</dd>
             </div>
             <div>
               <dt>Studied</dt>

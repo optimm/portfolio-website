@@ -26,8 +26,17 @@ const Grid = styled.ul`
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 
+  /* The newest post leads as a full-width feature. */
+  > li:first-child {
+    grid-column: 1 / -1;
+  }
+
   @media (max-width: 760px) {
     grid-template-columns: 1fr;
+
+    > li:first-child {
+      grid-column: auto;
+    }
   }
 `;
 

@@ -2,25 +2,32 @@ import React from "react";
 import styled from "styled-components";
 import { ProjectList } from "../../data/ProjectData";
 
-// Three columns; the first project spans two so the grid of five has rhythm.
+// Three columns. The featured project leads as a full-width banner and the
+// last card spans two, so every row of six projects fills the grid.
 const Grid = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 
   > li:first-child {
+    grid-column: 1 / -1;
+  }
+
+  > li:last-child {
     grid-column: span 2;
   }
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    > li:first-child {
-      grid-column: 1 / -1;
-    }
   }
+
   @media (max-width: 560px) {
     grid-template-columns: 1fr;
+
+    > li:first-child,
+    > li:last-child {
+      grid-column: auto;
+    }
   }
 `;
 
@@ -66,7 +73,7 @@ const Card = styled.article`
 
   p {
     margin-top: 8px;
-    max-width: 52ch;
+    max-width: ${({ $featured }) => ($featured ? "68ch" : "52ch")};
     color: var(--muted);
     font-size: ${({ $featured }) => ($featured ? "17px" : "15.5px")};
   }
@@ -161,6 +168,11 @@ function Projects() {
                     <span className="github" aria-hidden="true" />
                     Code
                   </a>
+                  {project.blog_url && (
+                    <a href={project.blog_url} target="_blank" rel="noopener noreferrer">
+                      {project.blog_label || "Read the blog"}
+                    </a>
+                  )}
                 </div>
               </Card>
             </li>
